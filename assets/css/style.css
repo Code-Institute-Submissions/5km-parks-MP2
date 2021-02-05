@@ -42,6 +42,8 @@ body {
     color: var(--theme-black);
     text-decoration: none;
     text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 /***** Layout Settings *****/
