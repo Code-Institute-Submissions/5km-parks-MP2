@@ -153,7 +153,10 @@ button {
     height: 100%;
     min-height: 40vh;
     box-shadow: 2.5px 5px 10px -5px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    border-radius: 10px !important;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    /* For border-radius on iOS devices */
 }
 
 /** Main Content - Map Content **/
