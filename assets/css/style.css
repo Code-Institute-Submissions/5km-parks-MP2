@@ -340,3 +340,12 @@ button {
     align-items: center;
     padding: 1rem;
 }
+
+/***** About Section *****/
+
+.about-container {
+    background: var(--theme-green);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0 0 1rem 0;
+}
