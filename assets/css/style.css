@@ -1,0 +1,32 @@
+/*
+Stylesheet for - https://asdub.github.io/5km-parks-MP2/ 
+*/
+
+/***** Fonts *****/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400&display=swap");
+
+
+/***** Css Variables *****/
+:root {
+    --theme-black: #0F0F0F;
+    --theme-margin: 5px;
+}
+
+/***** Global Settings *****/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+    font-size: 1rem;
+    margin: var(--theme-margin);
+}
+
+/***** Layout Settings *****/
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
