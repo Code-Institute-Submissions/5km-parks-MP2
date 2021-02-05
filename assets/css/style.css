@@ -123,6 +123,10 @@ button {
 }
 
 /** Main Content - Map **/
+.map-area-container {
+    box-shadow: 2.5px 5px 10px -5px rgb(0 0 0 / 20%);
+}
+
 .map-area {
     background: #ffffff;
     display: flex;
