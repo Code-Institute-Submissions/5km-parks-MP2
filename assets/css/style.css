@@ -37,7 +37,7 @@ body {
 
 button {
     border: none;
-    padding: 5px 20px;
+    padding: 0.2rem 0.3rem;
     border-radius: 33px;
 }
 
@@ -130,6 +130,7 @@ button {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    box-shadow: 2.5px 5px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .map-area p {
@@ -152,7 +153,6 @@ button {
 #map {
     height: 100%;
     min-height: 40vh;
-    box-shadow: 2.5px 5px 10px -5px rgba(0, 0, 0, 0.2);
     border-radius: 10px !important;
     -webkit-transform: translate3d(0px, 0px, 0px);
     -webkit-mask-image: -webkit-radial-gradient(white, black);
@@ -169,7 +169,7 @@ button {
     background: var(--theme-green);
     border-radius: 10px;
     transform: translateY(-10px);
-    box-shadow: -2.5px -5px 10px -5px rgb(0 0 0 / 40%);
+    box-shadow: -2.5px -5px 10px -5px rgb(0 0 0 / 0.4);
 }
 
 .map-content-area-icon i {
@@ -225,12 +225,13 @@ button {
     background: #ffffff;
     padding: 1rem 1rem;
     border-radius: 10px;
+    width: -webkit-fill-available;
 }
 
 .customise-panel-inner {
     display: grid;
-    column-gap: 12px;
-    row-gap: 12px;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
     padding: 0.5rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
