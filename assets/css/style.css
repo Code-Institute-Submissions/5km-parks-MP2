@@ -123,6 +123,7 @@ body {
     color: var(--theme-green);
     text-transform: uppercase;
     font-size: 0.8rem;
+    font-weight: 500;
     padding: 0.5rem 0;
 }
 
@@ -160,7 +161,18 @@ body {
 .map-content-area-text p {
     text-align: center;
     color: #ffffff;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     padding: 1rem 0;
+}
+
+.map-content-area-help a {
+    color: #ffffff;
+    font-size: 0.9rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.map-content-area-help a:focus,
+.map-content-area-help a:hover {
+    color: var(--theme-black);
 }
