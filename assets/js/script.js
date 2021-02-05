@@ -25,6 +25,7 @@ function newMap(position) {
         center: { lat: 53.3242381, lng: -6.385786},
         zoom: 11,
         streetViewControl: false,
+        zoomControl: true,
         disableDefaultUI: true
         });
     // Display user location on map.
