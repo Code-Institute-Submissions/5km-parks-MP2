@@ -9,6 +9,7 @@ Stylesheet for - https://asdub.github.io/5km-parks-MP2/
 /***** Css Variables *****/
 :root {
     --theme-black: #0F0F0F;
+    --theme-green: #3FB777;
     --theme-margin: 6px;
 }
 
@@ -29,6 +30,7 @@ body {
     font-family: "roboto", sans-serif;
     font-size: 1rem;
     margin: var(--theme-margin);
+    color: var(--theme-black);
 }
 
 /***** Layout Settings *****/
@@ -52,20 +54,47 @@ body {
     padding-bottom: 1rem;
 }
 
-/** Header Logo **/
 .logo h1 {
-    color: #3FB777;
+    color: var(--theme-green);
     font-size: 2rem;
+    position: relative;
 }
 
 .logo > h1 > span {
-     font-size: 1.6rem;
-     text-transform: uppercase;
+    font-size: 1.6rem;
+    text-transform: uppercase;
 }
 
 .logo > h1 > span:nth-child(2) {
     color: var(--theme-black);
-     margin: 0 0.5rem;
+    margin: 0 0.5rem;
+}
+
+.logo i {
+    top: 8px;
+    position: absolute;
+}
+
+.header-content p {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.header-content p span {
+    color: var(--theme-green);
+}
+
+.help-toggle {
+    color: var(--theme-green);
+    top: 0;
+    right: 0;
+    margin: calc(var(--theme-margin) + 1rem);
+    position: absolute;
+}
+
+.help-toggle i {
+    font-size: 2.2rem;
 }
 
     
