@@ -349,3 +349,38 @@ button {
     border-radius: 10px;
     margin: 0 0 1rem 0;
 }
+
+.about-logo {
+    padding-bottom: 0.5rem;
+}
+
+.about-logo h2 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.about-logo > h2 > span {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.about-logo > h2 > span:nth-child(2) {
+    color: var(--theme-black);
+    margin: 0 0.5rem;
+}
+
+.about-logo i {
+    top: 4px;
+    position: absolute;
+}
+
+.about-content > p:nth-child(1) > span {
+    font-weight: 500;
+}
+
+.about-content > p:nth-child(2) {
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 1rem 0;
+}
