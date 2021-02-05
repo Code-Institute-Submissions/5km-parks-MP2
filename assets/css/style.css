@@ -27,6 +27,7 @@ p {
 }
 
 body {
+    height: 100%;
     font-family: "roboto", sans-serif;
     font-size: 1rem;
     margin: var(--theme-margin);
@@ -94,7 +95,13 @@ body {
 }
 
 .help-toggle i {
-    font-size: 2.2rem;
+    font-size: 2rem;
+}
+
+/***** Main Content - Map *****/
+#map,
+.main-content-container {
+  height: 100%;
 }
 
     
