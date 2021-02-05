@@ -35,6 +35,15 @@ body {
     color: var(--theme-black);
 }
 
+.white-btn-large {
+    background: #ffffff;
+    padding: 1rem 4rem;
+    border-radius: 33px;
+    color: var(--theme-black);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 /***** Layout Settings *****/
 .layout {
     background: #EBE4E4;
@@ -174,4 +183,11 @@ body {
 .map-content-area-help a:focus,
 .map-content-area-help a:hover {
     color: var(--theme-black);
+}
+
+.map-content-area-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(1rem - 10px) 1rem 1rem 1rem;
 }
