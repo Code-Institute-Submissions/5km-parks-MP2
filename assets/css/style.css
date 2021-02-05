@@ -9,13 +9,20 @@ Stylesheet for - https://asdub.github.io/5km-parks-MP2/
 /***** Css Variables *****/
 :root {
     --theme-black: #0F0F0F;
-    --theme-margin: 5px;
+    --theme-margin: 6px;
 }
 
 /***** Global Settings *****/
 
 html {
     scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0
 }
 
 body {
@@ -26,7 +33,43 @@ body {
 
 /***** Layout Settings *****/
 .layout {
+    background: #EBE4E4;
+    border-radius: 3px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    padding: 1rem;
 }
+
+
+/***** Header *****/
+.head-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    padding-bottom: 1rem;
+}
+
+/** Header Logo **/
+.logo h1 {
+    color: #3FB777;
+    font-size: 2rem;
+}
+
+.logo > h1 > span {
+     font-size: 1.6rem;
+     text-transform: uppercase;
+}
+
+.logo > h1 > span:nth-child(2) {
+    color: var(--theme-black);
+     margin: 0 0.5rem;
+}
+
+    
+
+
+
+
