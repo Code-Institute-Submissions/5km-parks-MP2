@@ -407,6 +407,10 @@ button {
     align-items: center
 }
 
+.footer > p {
+    color: #707070;
+}
+
 .footer > p:nth-child(1) > a {
     color: #707070;
     font-size: 0.9rem;
@@ -414,6 +418,5 @@ button {
 
 .footer > p:nth-child(2) {
     padding: 0.5rem 0 0 0;
-    color: #707070;
     font-size: 0.8rem;
 }
