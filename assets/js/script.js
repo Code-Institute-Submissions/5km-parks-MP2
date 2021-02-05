@@ -24,6 +24,8 @@ function newMap(position) {
         map = new google.maps.Map(document.getElementById('map'), {
         center: { lat: 53.3242381, lng: -6.385786},
         zoom: 11,
+        streetViewControl: false,
+        disableDefaultUI: true
         });
     // Display user location on map.
         infoWindow = new google.maps.InfoWindow() 
