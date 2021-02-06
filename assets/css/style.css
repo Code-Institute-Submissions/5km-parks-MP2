@@ -260,9 +260,16 @@ p.location-error a {
     column-gap: 0.5rem;
 }
 
-.park-item img {
+.park-img {
+    background-image: url();
     max-width: 150px;
     border-radius: 10px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover !important;
+    width: 40vw;
+    height: calc(40vw / 1.69);
 }
 
 .park-data > p:nth-child(1) > span {

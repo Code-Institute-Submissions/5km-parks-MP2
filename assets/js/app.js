@@ -124,13 +124,13 @@ function calculateAndDisplayRoute(directionsService, destination, place) {
                     document.getElementById('mapContent').innerHTML =
                                 `<div class="park-container">` +
                                 `<div class ="park-item">` + 
-                                `<img src="${place.photos[0].getUrl()}" alt="${place.name}">` + 
+                                `<div class ="park-img" style="background: url(${place.photos[0].getUrl()})" alt="${place.name}"></div>` + 
                                 `</div>`+
                                 `<div class="park-data">`+
                                 `<p><span> ${place.name}</span></p>` +
-                                `<p><span> ${distanceKm.toFixed(1)} Km away.</span></p>` +
-                                `<p><span> ${timeMn.toFixed(1)} Mins walk.</span></p>` +
-                                `<p><span> ${place.rating} /5 User rating</span></p>` +
+                                `<p><span> ${distanceKm.toFixed(1)} km away</span></p>` +
+                                `<p><span> ${timeMn.toFixed(1)} min walk</span></p>` +
+                                `<p><span> ${place.rating} /5 user rating</span></p>` +
                                 `</div>`;
                                 `</div>`;
             }
