@@ -1,16 +1,22 @@
 //Buttons and scroll to section
 window.addEventListener('load', function() {
+    var buttons = document.querySelectorAll('.white-btn-large');
     var link;
-    document.querySelectorAll('.white-btn-large').forEach(item => {
-     item.addEventListener('click', event => {
-        link = event.targat.getAttribute('data-link');
-        console.log("link", link);
-        document.getElementById(`#${link}`).scrollIntoView({
+
+    buttons.forEach(item => {
+    item.addEventListener('click', event => {
+        document.querySelectorAll('.white-btn-large').forEach(item => {
+            item.classList.toggle('active');
+        })
+        event.target.classList.toggle('active');
+        link = "#" + event.target.getAttribute('data-link');
+        document.querySelector(link).scrollIntoView({
             behavior: 'smooth'
         });
     })
   })
 });
+
 
 //Help section overlay. 
 window.addEventListener('load', function() {
