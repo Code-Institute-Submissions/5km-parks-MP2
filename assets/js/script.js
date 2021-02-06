@@ -1,3 +1,17 @@
+//Buttons and scroll to section
+window.addEventListener('load', function() {
+    var link;
+    document.querySelectorAll('.white-btn-large').forEach(item => {
+     item.addEventListener('click', event => {
+        link = event.targat.getAttribute('data-link');
+        console.log("link", link);
+        document.getElementById(`#${link}`).scrollIntoView({
+            behavior: 'smooth'
+        });
+    })
+  })
+});
+
 //Help section overlay. 
 window.addEventListener('load', function() {
   document.querySelectorAll('.help').forEach(item => {
@@ -23,6 +37,8 @@ window.addEventListener('load', function() {
         radius = userRadius;
         radiusCircle.setRadius(radius);
         //userPosition = new google.maps.LatLng(localStorage.getItem('position_lat'), localStorage.getItem('position_lat'));
+        infoWindow.close();
+        reloadRoute();
         reloadMarkers();
         searchParks();
     })

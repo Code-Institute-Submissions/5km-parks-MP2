@@ -96,26 +96,31 @@ function createContent(place) {
             var markerName = `<div class='map-popup'>` +
                              `<span>${place.name}</span>` +
                              `</div>`;
-            infoWindow.setPosition(destination);
-            infoWindow.setContent(markerName);
-            infoWindow.open(map);
-            map.setZoom(12);
-            if (directions && directions.length > 0) {
-                for (var i = 0; i < directions.length; i++)
-                    directions[i].setMap(null);
-            }
-            directions = [];
-            calculateAndDisplayRoute(directionsService, destination, place);
+                infoWindow.setPosition(destination);
+                infoWindow.setContent(markerName);
+                infoWindow.open(map);
+                map.setZoom(12);
+                reloadRoute()
+                calculateAndDisplayRoute(directionsService, destination, place);
         });
     } 
 }
 
-//Remove exisitng markers from arrray/ map - called when user radius is changed
+//Used to remove exisitng markers from arrray/ map - called when user radius is changed
 function reloadMarkers() {
     for (var i=0; i<markers.length; i++) {
         markers[i].setMap(null);
     }
     markers = [];
+}
+
+//Used to reload exisiting route on map
+function reloadRoute() {
+    if (directions && directions.length > 0) {
+        for (var i = 0; i < directions.length; i++)
+            directions[i].setMap(null);
+    }
+    directions = [];
 }
 
 //Distance and route calculation and render

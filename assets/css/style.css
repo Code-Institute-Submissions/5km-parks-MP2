@@ -177,6 +177,10 @@ em {
     overflow: hidden !important;
 }
 
+.gm-iw {
+    padding: 0.5rem !important;
+}
+
 .map-popup {
     display: flex;
     flex-direction: column;
