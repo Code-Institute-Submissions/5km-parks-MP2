@@ -99,9 +99,7 @@ function createContent(place) {
 
 //Distance and route calculation and render
 function calculateAndDisplayRoute(directionsService, destination, place) {
-    console.log(`Destination: ${destination}`);
-    console.log(`Origin: ${origin}`);
-  directionsService.route(
+    directionsService.route(
     {
       origin: origin,
       destination: destination,
@@ -117,7 +115,11 @@ function calculateAndDisplayRoute(directionsService, destination, place) {
                 }));
                 let distanceKm = response.routes[0].legs[0].distance.value / 1000,
                     timeMn = response.routes[0].legs[0].duration.value / 60;
-                    infoWindow.setContent(place.name + distanceKm + " km"); //TEMP - COMPLETE 
+                var markerResponce = `<div class='map-popup'>` +
+                                 `<span>${place.name}</span>` +
+                                 `<span>${timeMn.toFixed(1)} minutes walk..</span>` +
+                                 `</div>`;  
+                    infoWindow.setContent(markerResponce); 
                     document.getElementById('mapContent').innerHTML =
                                 `<div class="park-container">` +
                                 `<div class ="park-item">` + 
@@ -125,7 +127,7 @@ function calculateAndDisplayRoute(directionsService, destination, place) {
                                 `</div>`+
                                 `<p>Park Name:<span> ${place.name}</span></p>` +
                                 `<p>Distance:<span> ${distanceKm.toFixed(1)} km</span></p>` +
-                                `<p>Walk Time:<span> ${timeMn.toFixed(1)} km</span></p>` +
+                                `<p>Walk Time:<span> ${timeMn.toFixed(1)} mins</span></p>` +
                                 `<p>Rating:<span> ${place.rating} /5</span></p>` +
                                 `</div>`;
             }
