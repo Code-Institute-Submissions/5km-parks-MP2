@@ -431,11 +431,6 @@ button {
     background: rgb(68 68 68 / 0.75);
     height: 100%;
     width: 100%;  
-    transition: all 0.2s ease-in-out;
-}
-
-.help-active {
-    display: block;
     -webkit-animation: fade .3s ease-out;
     -moz-animation: fade .3s ease-out;
 }
@@ -449,6 +444,11 @@ button {
     100% { opacity: 1; }
 }
 
+
+.help-active {
+    display: block;
+}
+
 .no-scroll {
 /* Stop body scroll when overlay is active */
     overflow: hidden;
@@ -460,4 +460,17 @@ button {
     background: #ffffff;
     margin: 2rem;
     border-radius: 10px;
+}
+
+.help-overlay-content {
+    position: relative;
+}
+
+.help-overlay-content i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    color: var(--theme-green);
+    padding: 1rem;
 }
