@@ -260,8 +260,15 @@ p.location-error a {
     column-gap: 0.5rem;
 }
 
+.park-item {
+    background-color: #215037;
+    max-width: 150px;
+    border-radius: 10px;
+    width: 40vw;
+    height: calc(40vw / 1.69);
+}
+
 .park-img {
-    background-image: url();
     max-width: 150px;
     border-radius: 10px;
     -webkit-background-size: cover;
