@@ -457,13 +457,16 @@ button {
 .help-overlay-container {
     height: calc(100% - 4rem);
     width: calc(100% - 4rem);
-    background: #ffffff;
+    background: var(--theme-green);
     margin: 2rem;
     border-radius: 10px;
 }
 
 .help-overlay-content {
     position: relative;
+    background: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .help-overlay-content > i {
@@ -486,7 +489,11 @@ button {
 
 .help-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.help-content-item {
     padding: 1rem 0;
 }
 
