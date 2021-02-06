@@ -2,7 +2,7 @@
 function getLocation() {
     var options = {
     enableHighAccuracy: true,
-    timeout: 500,
+    timeout: 5000,
     maximumAge: 0
     };  
     if (navigator.geolocation) {
@@ -66,7 +66,7 @@ function newMap(position) {
 }
 
 function createContent(place) {
-    const directionsService = new google.maps.DirectionsService();
+    //const directionsService = new google.maps.DirectionsService();
     if (place.user_ratings_total > 100) {
         const marker = new google.maps.Marker({
             map,
@@ -82,6 +82,7 @@ function createContent(place) {
                     directions[i].setMap(null);
             }
             directions = [];
+            //calculateAndDisplayRoute(directionsService, destination, place);
         });
     } 
 }
