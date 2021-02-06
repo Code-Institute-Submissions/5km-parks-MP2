@@ -36,10 +36,13 @@ function newMap(position) {
         zoomControl: true,
         disableDefaultUI: true
         });
+    var LocationMsg = `<div class='map-popup'>` +
+                      `<span>Your Location</span>` +
+                      `</div>`;
     // Display user location on map.
         infoWindow = new google.maps.InfoWindow() 
         infoWindow.setPosition({ lat: latitude, lng: longitude});
-        infoWindow.setContent("Your Location");
+        infoWindow.setContent(LocationMsg);
         infoWindow.open(map);
         map.setCenter({ lat: latitude, lng: longitude});
     // Draw radius on map.
