@@ -132,9 +132,9 @@ function calculateAndDisplayRoute(directionsService, destination, place) {
                                 `</div>` +
                                 `<div class="park-data">`+
                                 `<p><span> ${place.name}</span></p>` +
-                                `<p><span> ${distanceKm.toFixed(1)}</span> km away</p>` +
-                                `<p><span> ${timeMn.toFixed(1)}</span> min walk</p>` +
-                                `<p><span> ${place.rating} /5</span> user rating</p>` +
+                                `<p><i class="fas fa-map-marker-alt"> </i><span> ${distanceKm.toFixed(1)}</span> km away</p>` +
+                                `<p><i class="fas fa-walking"></i> <span> ${timeMn.toFixed(1)}</span> min walk</p>` +
+                                `<p><i class="fas fa-star"></i> <span> ${place.rating} /5</span> user rating</p>` +
                                 `</div>`;
             }
         } else {
