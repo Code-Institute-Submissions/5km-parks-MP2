@@ -254,8 +254,21 @@ p.location-error a {
 }
 
 /** Main Content - Map Content - Results **/
+.park-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+}
+
 .park-item img {
     max-width: 150px;
+    border-radius: 10px;
+}
+
+.park-data > p:nth-child(1) > span {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 /** Customise Section **/
