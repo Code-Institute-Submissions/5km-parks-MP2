@@ -464,12 +464,9 @@ button {
 
 .help-overlay-content {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
-.help-overlay-content i {
+.help-overlay-content > i {
     position: absolute;
     top: 0;
     right: 0;
@@ -485,4 +482,15 @@ button {
 .heading h2 {
     color: var(--theme-green);
     font-size: 1.6rem;
+}
+
+.help-content {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+}
+
+.help-content-item span {
+    color: var(--theme-green);
+    font-weight: 500;
 }
