@@ -76,8 +76,11 @@ function createContent(place) {
         });
         google.maps.event.addListener(marker, "click", () => {
             var destination = place.geometry.location;
+            var markerName = `<div class='map-popup'>` +
+                             `<span>${place.name}</span>` +
+                             `</div>`;
             infoWindow.setPosition(destination);
-            infoWindow.setContent(place.name);
+            infoWindow.setContent(markerName);
             infoWindow.open(map);
             map.setZoom(12);
             if (directions && directions.length > 0) {

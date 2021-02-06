@@ -163,6 +163,13 @@ button {
     /* For border-radius on iOS devices */
 }
 
+.map-popup span {
+    text-transform: none;
+    color: var(--theme-black);
+    font-weight: 400;
+    /* For text within map infoWindows */
+}
+
 /* Location Error */
 p.location-error {
     color: #F86C6C;
