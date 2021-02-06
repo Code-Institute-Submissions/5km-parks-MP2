@@ -190,14 +190,15 @@ button {
     padding: 1rem 0;
 }
 
-.map-content-area-help a {
+.map-content-area-help span {
     color: #ffffff;
     font-size: 0.9rem;
+    text-decoration: underline;
     transition: all 0.2s ease-in-out;
 }
 
-.map-content-area-help a:focus,
-.map-content-area-help a:hover {
+.map-content-area-help span:focus,
+.map-content-area-help span:hover {
     color: var(--theme-black);
 }
 
