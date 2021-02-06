@@ -72,7 +72,7 @@ function newMap(position) {
 
 // Find required content - plot markers and data and position map to destination.
 function createContent(place) {
-    //const directionsService = new google.maps.DirectionsService();
+    const directionsService = new google.maps.DirectionsService();
     if (place.user_ratings_total > 100) {
         const marker = new google.maps.Marker({
             map,
@@ -92,10 +92,52 @@ function createContent(place) {
                     directions[i].setMap(null);
             }
             directions = [];
-            //calculateAndDisplayRoute(directionsService, destination, place);
+            calculateAndDisplayRoute(directionsService, destination, place);
         });
     } 
 }
+
+//Distance and route calculation and render
+function calculateAndDisplayRoute(directionsService, destination, place) {
+    console.log(`Destination: ${destination}`);
+    console.log(`Origin: ${origin}`);
+  directionsService.route(
+    {
+      origin: origin,
+      destination: destination,
+      travelMode: google.maps.TravelMode.WALKING,
+    },
+    (response, status) => {
+        if (status === "OK") {
+            for (var i = 0, len = response.routes.length; i < len; i++) {
+                directions.push(new google.maps.DirectionsRenderer({
+                map: map,
+                directions: response,
+                routeIndex: i
+                }));
+                let distanceKm = response.routes[0].legs[0].distance.value / 1000,
+                    timeMn = response.routes[0].legs[0].duration.value / 60;
+                    infoWindow.setContent(place.name + distanceKm + " km"); //TEMP - COMPLETE 
+                    document.getElementById('mapContent').innerHTML =
+                                `<div class="park-contrainer">` +
+                                `<div class ="park-item">` + 
+                                `<img src="${place.photos[0].getUrl()}" alt="${place.name}"` + 
+                                `</div>`;
+                                `<p>Park Name:<span> ${place.name}</span></p>` +
+                                `<p>Distance:<span> ${distanceKm.toFixed(1)} km</span></p>` +
+                                `<p>Walk Time:<span> ${timeMn.toFixed(1)} km</span></p>` +
+                                `<p>Rating:<span> ${place.rating} /5</span></p>` +
+                                `</div>`;
+            }
+        } else {
+            window.alert("Could not plot route due to " + status);
+        }
+    }
+  );
+}
+//Solution to clear each route render: 
+//https://stackoverflow.com/questions/32676497/google-map-api-v3-cannot-clear-the-previous-mutiple-routes-history
+
 
 // Callback function to iterate through Google Place results. 
 function callback(results, status) {
