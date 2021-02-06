@@ -124,7 +124,7 @@ button {
 
 /** Main Content - Map **/
 .map-area-container {
-    box-shadow: 2.5px 5px 10px -5px rgb(0 0 0 / 20%);
+    box-shadow: 2.5px 5px 10px -5px rgb(0 0 0 / 0.2);
 }
 
 .map-area {
@@ -423,14 +423,35 @@ button {
 
 /***** Help Overlay *****/
 .help-overlay {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
-    background: rgb(68 68 68 / 50%);
+    background: rgb(68 68 68 / 0.75);
     height: 100%;
     width: 100%;  
     transition: all 0.2s ease-in-out;
+}
+
+.help-active {
+    display: block;
+    -webkit-animation: fade .3s ease-out;
+    -moz-animation: fade .3s ease-out;
+}
+
+@-webkit-keyframes fade {
+      0% { opacity: 0; }   
+    100% { opacity: 1; }
+}
+@-moz-keyframes fade {
+      0% { opacity: 0; }   
+    100% { opacity: 1; }
+}
+
+.no-scroll {
+/* Stop body scroll when overlay is active */
+    overflow: hidden;
 }
 
 .help-overlay-container {
