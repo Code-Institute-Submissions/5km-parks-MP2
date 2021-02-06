@@ -81,7 +81,6 @@ function searchParks() {
 
 // Find required content - plot markers and data and position map to destination.
 function createContent(place) {
-      console.log('place:', JSON.stringify(place));
     const directionsService = new google.maps.DirectionsService();
     if (place.user_ratings_total > 100) {
         const marker = new google.maps.Marker({
@@ -177,7 +176,6 @@ function callback(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
     for (var i = 0; i < results.length; i++) {
       createContent(results[i]);
-      console.dir(results[i]);
     }
   }
 }
