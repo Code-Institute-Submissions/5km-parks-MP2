@@ -35,7 +35,8 @@ function newMap(position) {
         zoom: 11,
         streetViewControl: false,
         zoomControl: true,
-        disableDefaultUI: true
+        disableDefaultUI: true,
+        gestureHandling: 'greedy'
         });
     var LocationMsg = `<div class='map-popup'>` +
                       `<span>Your Location</span>` +
@@ -53,7 +54,7 @@ function newMap(position) {
         strokeOpacity: 0.5,
         strokeWeight: 2,
         fillColor: "#0f0f0f",
-        fillOpacity: 0.15,
+        fillOpacity: 0.2,
         map,
         center: { lat: latitude, lng: longitude},
         radius: radius,

@@ -169,11 +169,20 @@ em {
     /* For border-radius on iOS devices */
 }
 
+.gm-style-iw {
+    padding: 0 !important;
+}
+
+.gm-style-iw-d {
+    overflow: hidden !important;
+}
+
 .map-popup {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
+    padding: 0.5rem;
 }
 
 .map-popup span {
