@@ -1,3 +1,4 @@
+//Help section overlay. 
 window.addEventListener('load', function() {
   document.querySelectorAll('.help').forEach(item => {
     item.addEventListener('click', event => {
