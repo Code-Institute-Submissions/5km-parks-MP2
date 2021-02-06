@@ -30,7 +30,7 @@ function newMap(position) {
     const { latitude, longitude } = position.coords;
         origin = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
         map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: 53.3242381, lng: -6.385786},
+        center: { lat: 53.3242381, lng: -6.385786}, //Dublin GPS
         zoom: 11,
         streetViewControl: false,
         zoomControl: true,
@@ -38,6 +38,7 @@ function newMap(position) {
         });
     var LocationMsg = `<div class='map-popup'>` +
                       `<span>Your Location</span>` +
+                      `<span>Lat: ${position.coords.latitude} | Lng: ${position.coords.longitude}</span>` +
                       `</div>`;
     // Display user location on map.
         infoWindow = new google.maps.InfoWindow() 

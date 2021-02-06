@@ -163,11 +163,24 @@ button {
     /* For border-radius on iOS devices */
 }
 
+.map-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .map-popup span {
     text-transform: none;
     color: var(--theme-black);
     font-weight: 400;
+    padding: 0.1rem;
     /* For text within map infoWindows */
+}
+
+.map-popup > span:nth-child(2) {
+    font-weight: 300;
+    font-size: 0.7rem;
+     /* For lat/lng within map infoWindows */
 }
 
 /* Location Error */
