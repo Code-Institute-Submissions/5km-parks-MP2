@@ -249,6 +249,11 @@ p.location-error a {
     padding: calc(1rem - 10px) 1rem 1rem 1rem;
 }
 
+/** Main Content - Map Content - Results **/
+.park-item img {
+    max-width: 150px;
+}
+
 /** Customise Section **/
 .customise-area-container {
     padding: 1rem 0;

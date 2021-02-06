@@ -119,10 +119,10 @@ function calculateAndDisplayRoute(directionsService, destination, place) {
                     timeMn = response.routes[0].legs[0].duration.value / 60;
                     infoWindow.setContent(place.name + distanceKm + " km"); //TEMP - COMPLETE 
                     document.getElementById('mapContent').innerHTML =
-                                `<div class="park-contrainer">` +
+                                `<div class="park-container">` +
                                 `<div class ="park-item">` + 
-                                `<img src="${place.photos[0].getUrl()}" alt="${place.name}"` + 
-                                `</div>`;
+                                `<img src="${place.photos[0].getUrl()}" alt="${place.name}">` + 
+                                `</div>`+
                                 `<p>Park Name:<span> ${place.name}</span></p>` +
                                 `<p>Distance:<span> ${distanceKm.toFixed(1)} km</span></p>` +
                                 `<p>Walk Time:<span> ${timeMn.toFixed(1)} km</span></p>` +
