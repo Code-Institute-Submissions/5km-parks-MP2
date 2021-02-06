@@ -38,7 +38,7 @@ function newMap(position) {
         });
     var LocationMsg = `<div class='map-popup'>` +
                       `<span>Your Location</span>` +
-                      `<span>Lat: ${position.coords.latitude} | Lng: ${position.coords.longitude}</span>` +
+                      `<span>Lat: <em>${position.coords.latitude.toFixed(4)}</em> | Lng: <em>${position.coords.longitude.toFixed(4)}</em></span>` +
                       `</div>`;
     // Display user location on map.
         infoWindow = new google.maps.InfoWindow() 

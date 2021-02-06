@@ -52,6 +52,12 @@ button {
     font-weight: 500;
 }
 
+em {
+    font-style: inherit;
+    color: var(--theme-green);
+    font-weight: 500;   
+}
+
 /***** Layout Settings *****/
 .layout {
     background: #EBE4E4;
@@ -167,6 +173,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0.1rem;
 }
 
 .map-popup span {
@@ -180,7 +187,7 @@ button {
 .map-popup > span:nth-child(2) {
     font-weight: 300;
     font-size: 0.7rem;
-     /* For lat/lng within map infoWindows */
+     /* For lat/lng titles within map infoWindows */
 }
 
 /* Location Error */
