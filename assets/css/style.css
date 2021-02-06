@@ -280,6 +280,7 @@ p.location-error a {
     padding: 1rem 1rem;
     border-radius: 10px;
     width: -webkit-fill-available;
+    box-shadow: 2.5px 5px 10px -5px rgb(0 0 0 / 20%);
 }
 
 .customise-panel-inner {
@@ -407,6 +408,7 @@ p.location-error a {
     padding: 1rem;
     border-radius: 10px;
     margin: 0 0 1rem 0;
+    box-shadow: 2.5px 5px 10px -5px rgb(0 0 0 / 20%);
 }
 
 .about-logo,
