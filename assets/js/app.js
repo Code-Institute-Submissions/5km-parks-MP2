@@ -60,4 +60,37 @@ function newMap(position) {
         openNow: true,
         type: ['park']
     };
+
+    let service = new google.maps.places.PlacesService(map);
+        service.nearbySearch(request, callback);
+}
+
+function createContent(place) {
+    const directionsService = new google.maps.DirectionsService();
+    if (place.user_ratings_total > 100) {
+        const marker = new google.maps.Marker({
+            map,
+            position: place.geometry.location,
+        });
+        google.maps.event.addListener(marker, "click", () => {
+            var destination = place.geometry.location;
+            infoWindow.setPosition(destination);
+            infoWindow.setContent(place.name);
+            infoWindow.open(map);
+            if (directions && directions.length > 0) {
+                for (var i = 0; i < directions.length; i++)
+                    directions[i].setMap(null);
+            }
+            directions = [];
+        });
+    } 
+}
+
+function callback(results, status) {
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    for (var i = 0; i < results.length; i++) {
+      createContent(results[i]);
+      console.dir(results[i]);
+    }
+  }
 }
