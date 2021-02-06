@@ -420,3 +420,23 @@ button {
     padding: 0.5rem 0 0 0;
     font-size: 0.8rem;
 }
+
+/***** Help Overlay *****/
+.help-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgb(68 68 68 / 50%);
+    height: 100%;
+    width: 100%;  
+    transition: all 0.2s ease-in-out;
+}
+
+.help-overlay-container {
+    height: calc(100% - 4rem);
+    width: calc(100% - 4rem);
+    background: #ffffff;
+    margin: 2rem;
+    border-radius: 10px;
+}
