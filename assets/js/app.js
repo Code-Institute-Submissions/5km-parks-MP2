@@ -120,12 +120,13 @@ function calculateAndDisplayRoute(directionsService, destination, place) {
                                  `<span>${timeMn.toFixed(1)} minutes walk..</span>` +
                                  `</div>`;  
                     infoWindow.setContent(markerResponce); 
+                    document.getElementById('mapContent').classList.add('active');
                     document.getElementById('mapContent').innerHTML =
                                 `<div class="park-container">` +
                                 `<div class ="park-item">` + 
                                 `<img src="${place.photos[0].getUrl()}" alt="${place.name}">` + 
                                 `</div>`+
-                                `<p>Park Name:<span> ${place.name}</span></p>` +
+                                `<p><span> ${place.name}</span></p>` +
                                 `<p>Distance:<span> ${distanceKm.toFixed(1)} km</span></p>` +
                                 `<p>Walk Time:<span> ${timeMn.toFixed(1)} mins</span></p>` +
                                 `<p>Rating:<span> ${place.rating} /5</span></p>` +

@@ -216,6 +216,10 @@ p.location-error a {
     box-shadow: -2.5px -5px 10px -5px rgb(0 0 0 / 0.4);
 }
 
+.map-content-area.active {
+     align-items: flex-start;
+}
+
 .map-content-area-icon i {
     color: #ffffff;
     font-size: 4rem;
