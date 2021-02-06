@@ -360,27 +360,32 @@ button {
     margin: 0 0 1rem 0;
 }
 
-.about-logo {
+.about-logo,
+.help-logo {
     padding-bottom: 0.5rem;
 }
 
-.about-logo h2 {
+.about-logo h2,
+.help-logo h2 {
     color: #ffffff;
     font-size: 1.4rem;
     position: relative;
 }
 
-.about-logo > h2 > span {
+.about-logo > h2 > span,
+.help-logo > h2 > span {
     font-size: 1.1rem;
     text-transform: uppercase;
 }
 
-.about-logo > h2 > span:nth-child(2) {
+.about-logo > h2 > span:nth-child(2),
+.help-logo > h2 > span:nth-child(2) {
     color: var(--theme-black);
     margin: 0 0.5rem;
 }
 
-.about-logo i {
+.about-logo i,
+.help-logo i {
     top: 4px;
     position: absolute;
 }
@@ -501,4 +506,11 @@ button {
 .help-content-item span {
     color: var(--theme-green);
     font-weight: 500;
+}
+
+.help-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
 }
