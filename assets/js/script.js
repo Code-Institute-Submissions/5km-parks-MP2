@@ -29,6 +29,24 @@ window.addEventListener('load', function() {
   })
 });
 
+//Customise Panel Colour Buttons
+window.addEventListener('load', function() {
+    var controls = document.querySelectorAll('.colour-controls');
+    var colour;
+
+    controls.forEach(item => {
+    item.addEventListener('click', event => {
+        document.querySelectorAll('.colour-controls').forEach(item => {
+            item.classList.remove('active');
+        })
+        event.target.classList.toggle('active');
+        colour = event.target.getAttribute('data-colour');
+        radiusCircle.setOptions({fillColor: colour});
+        radiusCircle.setOptions({strokeColor: colour});
+    })
+  })
+});
+
 
 
 
