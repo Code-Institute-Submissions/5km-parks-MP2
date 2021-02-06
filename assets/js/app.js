@@ -122,19 +122,19 @@ function calculateAndDisplayRoute(directionsService, destination, place) {
                 var cardHeight = document.getElementById('mapContent').scrollHeight;
                 console.log(cardHeight);
                     infoWindow.setContent(markerResponce);
-                    document.getElementById('mapContent').style.height = `calc(${cardHeight}px - 2rem)`;
+                    document.getElementById('mapContent').style.height = `calc(${cardHeight}px)`;
                     document.getElementById('mapContent').classList.add('active');
                     document.getElementById('mapContent').innerHTML =
                                 `<div class="park-container">` +
                                 `<div class ="park-item">` + 
                                 `<div class ="park-img" style="background: url(${place.photos[0].getUrl()})" alt="${place.name}"></div>` + 
-                                `</div>`+
+                                `</div>` +
+                                `</div>` +
                                 `<div class="park-data">`+
                                 `<p><span> ${place.name}</span></p>` +
                                 `<p><span> ${distanceKm.toFixed(1)}</span> km away</p>` +
                                 `<p><span> ${timeMn.toFixed(1)}</span> min walk</p>` +
                                 `<p><span> ${place.rating} /5</span> user rating</p>` +
-                                `</div>`;
                                 `</div>`;
             }
         } else {

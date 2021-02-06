@@ -217,7 +217,8 @@ p.location-error a {
 }
 
 .map-content-area.active {
-     align-items: flex-start;
+    padding: 0;
+    flex-direction: row;
 }
 
 .map-content-area-icon i {
@@ -255,33 +256,34 @@ p.location-error a {
 
 /** Main Content - Map Content - Results **/
 .park-container {
-    display: flex;
-    flex-direction: row;
-    column-gap: 0.5rem;
+    height: 100%;
 }
 
 .park-item {
     background: linear-gradient(167deg, rgba(63,183,119,1) 2%, rgba(33,80,55,1) 84%);
-    max-width: 150px;
     margin: 0 0.25rem 0 0;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     width: 40vw;
-    height: calc(40vw / 1.69);
+    height: 100%;
 }
 
 .park-img {
-    max-width: 150px;
-    border-radius: 10px;
+  
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover !important;
     width: 40vw;
-    height: calc(40vw / 1.69);
+    height: 100%;
 }
 
 .park-data {
     margin: 0 0 0 0.25rem;
+    padding: 0 0.25rem 0 0;
+    width: 100%;
 }
 
 .park-data > p:nth-child(1) > span {
