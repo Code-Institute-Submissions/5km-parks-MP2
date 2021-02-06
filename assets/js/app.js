@@ -128,9 +128,9 @@ function calculateAndDisplayRoute(directionsService, destination, place) {
                                 `</div>`+
                                 `<div class="park-data">`+
                                 `<p><span> ${place.name}</span></p>` +
-                                `<p>Distance:<span> ${distanceKm.toFixed(1)} km</span></p>` +
-                                `<p>Walk Time:<span> ${timeMn.toFixed(1)} mins</span></p>` +
-                                `<p>Rating:<span> ${place.rating} /5</span></p>` +
+                                `<p><span> ${distanceKm.toFixed(1)} Km away.</span></p>` +
+                                `<p><span> ${timeMn.toFixed(1)} Mins walk.</span></p>` +
+                                `<p><span> ${place.rating} /5 User rating</span></p>` +
                                 `</div>`;
                                 `</div>`;
             }
