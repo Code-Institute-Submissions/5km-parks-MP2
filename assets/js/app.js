@@ -22,6 +22,7 @@ function locError(err) {
 // Declaring Global Variables 
 var directions = [];
 var radius = 5000; //default radius 5km
+var position, radiusCircle;
 let map, infoWindow, origin;
 
 
@@ -47,7 +48,7 @@ function newMap(position) {
         infoWindow.open(map);
         map.setCenter({ lat: latitude, lng: longitude});
     // Draw radius on map.
-    const radiusCircle = new google.maps.Circle({
+    radiusCircle = new google.maps.Circle({
         strokeColor: "#0f0f0f",
         strokeOpacity: 0.8,
         strokeWeight: 2,
@@ -67,6 +68,9 @@ function newMap(position) {
     // Google Places request 
     let service = new google.maps.places.PlacesService(map);
         service.nearbySearch(request, callback);
+
+    localStorage.setItem('position_lat', position.coords.latitude ); // TEMP 
+    localStorage.setItem('position_lng', position.coords.longitude ); // TEMP
 }
 
 
@@ -120,11 +124,10 @@ function calculateAndDisplayRoute(directionsService, destination, place) {
                                  `<span>${timeMn.toFixed(1)} minutes walk..</span>` +
                                  `</div>`;  
                 var cardHeight = document.getElementById('mapContent').scrollHeight;
-                console.log(cardHeight);
-                    infoWindow.setContent(markerResponce);
-                    document.getElementById('mapContent').style.height = `calc(${cardHeight}px)`;
-                    document.getElementById('mapContent').classList.add('active');
-                    document.getElementById('mapContent').innerHTML =
+                            infoWindow.setContent(markerResponce);
+                            document.getElementById('mapContent').style.height = `calc(${cardHeight}px)`;
+                            document.getElementById('mapContent').classList.add('active');
+                            document.getElementById('mapContent').innerHTML =
                                 `<div class="park-container">` +
                                 `<div class ="park-item">` + 
                                 `<div class ="park-img" style="background: url(${place.photos[0].getUrl()})" alt="${place.name}"></div>` + 
@@ -134,7 +137,7 @@ function calculateAndDisplayRoute(directionsService, destination, place) {
                                 `<p><span> ${place.name}</span></p>` +
                                 `<p><i class="fas fa-map-marker-alt"> </i><span> ${distanceKm.toFixed(1)}</span> km away</p>` +
                                 `<p><i class="fas fa-walking"></i> <span> ${timeMn.toFixed(1)}</span> min walk</p>` +
-                                `<p><i class="fas fa-star"></i> <span> ${place.rating} /5</span> user rating</p>` +
+                                `<p><i class="far fa-star"></i> <span> ${place.rating} /5</span> user rating</p>` +
                                 `</div>`;
             }
         } else {
