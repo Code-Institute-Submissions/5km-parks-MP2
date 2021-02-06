@@ -60,11 +60,13 @@ function newMap(position) {
         openNow: true,
         type: ['park']
     };
-
+    // Google Places request 
     let service = new google.maps.places.PlacesService(map);
         service.nearbySearch(request, callback);
 }
 
+
+// Find required content - plot markers and data and position map to destination.
 function createContent(place) {
     //const directionsService = new google.maps.DirectionsService();
     if (place.user_ratings_total > 100) {
@@ -77,6 +79,7 @@ function createContent(place) {
             infoWindow.setPosition(destination);
             infoWindow.setContent(place.name);
             infoWindow.open(map);
+            map.setZoom(12);
             if (directions && directions.length > 0) {
                 for (var i = 0; i < directions.length; i++)
                     directions[i].setMap(null);
@@ -87,6 +90,7 @@ function createContent(place) {
     } 
 }
 
+// Callback function to iterate through Google Place results. 
 function callback(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
     for (var i = 0; i < results.length; i++) {
