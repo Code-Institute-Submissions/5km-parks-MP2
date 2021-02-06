@@ -31,7 +31,7 @@ window.addEventListener('load', function() {
     item.addEventListener('click', event => {
         document.querySelectorAll('.radius-controls').forEach(item => {
             item.classList.remove('active');
-        })
+        });
         event.target.classList.toggle('active');
         userRadius = parseInt(event.target.getAttribute('data-radius'));
         radius = userRadius;
