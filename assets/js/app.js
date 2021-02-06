@@ -21,9 +21,9 @@ function locError(err) {
 
 // Declaring Global Variables 
 var directions = [];
+var markers = [];
 var radius = 5000; //default radius 5km
-var position, radiusCircle;
-let map, infoWindow, origin;
+let map, infoWindow, origin, radiusCircle;
 
 
 // Create Map, Radius and Google Palces Request 
@@ -59,8 +59,15 @@ function newMap(position) {
         radius: radius,
     });
     // Google Places request object for parks within a 5km radius.
+    searchParks()
+
+    localStorage.setItem('position_lat', position.coords.latitude ); // TEMP 
+    localStorage.setItem('position_lng', position.coords.longitude ); // TEMP
+}
+
+function searchParks() {
     var request = {
-        location: { lat: latitude, lng: longitude},
+        location: origin,
         radius: radius,
         openNow: true,
         type: ['park']
@@ -68,20 +75,21 @@ function newMap(position) {
     // Google Places request 
     let service = new google.maps.places.PlacesService(map);
         service.nearbySearch(request, callback);
-
-    localStorage.setItem('position_lat', position.coords.latitude ); // TEMP 
-    localStorage.setItem('position_lng', position.coords.longitude ); // TEMP
 }
 
 
 // Find required content - plot markers and data and position map to destination.
 function createContent(place) {
+      console.log('place:', JSON.stringify(place));
     const directionsService = new google.maps.DirectionsService();
     if (place.user_ratings_total > 100) {
         const marker = new google.maps.Marker({
-            map,
+            map: map,
+            animation: google.maps.Animation.DROP,
             position: place.geometry.location,
         });
+        markers.push(marker);
+        
         google.maps.event.addListener(marker, "click", () => {
             var destination = place.geometry.location;
             var markerName = `<div class='map-popup'>` +
@@ -99,6 +107,14 @@ function createContent(place) {
             calculateAndDisplayRoute(directionsService, destination, place);
         });
     } 
+}
+
+//Remove exisitng markers from arrray/ map - called when user radius is changed
+function reloadMarkers() {
+    for (var i=0; i<markers.length; i++) {
+        markers[i].setMap(null);
+    }
+    markers = [];
 }
 
 //Distance and route calculation and render
