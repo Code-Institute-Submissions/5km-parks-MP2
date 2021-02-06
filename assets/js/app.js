@@ -1,14 +1,22 @@
 // Get user location
 function getLocation() {
+    var options = {
+    enableHighAccuracy: true,
+    timeout: 500,
+    maximumAge: 0
+    };  
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(newMap, locError);
+        navigator.geolocation.getCurrentPosition(newMap, locError, options);
     } else {
         locError()
     }
 }
 // If user location cannot be found
 function locError(err) {
+    var userMessage = document.querySelector('.location-status')
     console.log("Error finding your location", err);
+    userMessage.classList.toggle('location-error');
+    userMessage.innerHTML =  `Location could not be found.<br>Please <a href="/">reolad page</a> and try again.`;
 }
 
 // Declaring Global Variables 

@@ -163,6 +163,19 @@ button {
     /* For border-radius on iOS devices */
 }
 
+/* Location Error */
+p.location-error {
+    color: #F86C6C;
+    text-transform: none;
+    font-weight: 400;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+p.location-error a {
+    color: #F86C6C;
+}
+
 /** Main Content - Map Content **/
 
 .map-content-area {
