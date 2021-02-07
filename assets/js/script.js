@@ -54,30 +54,35 @@ window.addEventListener('load', function() {
 
     controls.forEach(item => {
     item.addEventListener('click', event => {
-        document.querySelectorAll('.radius-controls').forEach(item => {
-            item.classList.remove('active');
-        });
-        event.target.classList.toggle('active');
-        userRadius = parseInt(event.target.getAttribute('data-radius'));
-        radius = userRadius;
-        radiusCircle.setRadius(radius);
-        userPosition = new google.maps.LatLng(sessionStorage.getItem('position_lat'), sessionStorage.getItem('position_lng'));
-        infoWindow.close();
-        // Handle secondary elements effected by user radius button
-        if (radius == 5000) {
-            header.innerHTML = "5KM";
-            map.setZoom(11);
-        } else if (radius == 3000) {
-            map.setZoom(12);
-            header.innerHTML = "3KM";
+        if(map){
+            document.querySelectorAll('.radius-controls').forEach(item => {
+                item.classList.remove('active');
+            });
+            event.target.classList.toggle('active');
+            userRadius = parseInt(event.target.getAttribute('data-radius'));
+            radius = userRadius;
+            radiusCircle.setRadius(radius);
+            userPosition = new google.maps.LatLng(sessionStorage.getItem('position_lat'), sessionStorage.getItem('position_lng'));
+            infoWindow.close();
+            // Handle secondary elements effected by user radius button
+            if (radius == 5000) {
+                header.innerHTML = "5KM";
+                map.setZoom(11);
+            } else if (radius == 3000) {
+                map.setZoom(12);
+                header.innerHTML = "3KM";
+            } else {
+                map.setZoom(13);
+                header.innerHTML = "1KM";
+            }
+            map.setCenter(userPosition)
+            reloadRoute();
+            reloadMarkers();
+            searchParks();
         } else {
-            map.setZoom(13);
-            header.innerHTML = "1KM";
+            document.getElementById('customiseError').classList.add('active');
+            document.getElementById('cusError').innerHTML = "Please wait until map loads.";
         }
-        map.setCenter(userPosition)
-        reloadRoute();
-        reloadMarkers();
-        searchParks();
     })
   })
 });
