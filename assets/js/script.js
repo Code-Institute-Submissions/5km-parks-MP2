@@ -42,8 +42,16 @@ window.addEventListener('load', function() {
         userRadius = parseInt(event.target.getAttribute('data-radius'));
         radius = userRadius;
         radiusCircle.setRadius(radius);
-        //userPosition = new google.maps.LatLng(localStorage.getItem('position_lat'), localStorage.getItem('position_lat'));
+        userPosition = new google.maps.LatLng(localStorage.getItem('position_lat'), localStorage.getItem('position_lng'));
         infoWindow.close();
+        if (radius == 5000) {
+            map.setZoom(11);
+        } else if (radius == 3000) {
+             map.setZoom(11);
+        } else {
+            map.setZoom(13);
+        }
+        map.setCenter(userPosition)
         reloadRoute();
         reloadMarkers();
         searchParks();

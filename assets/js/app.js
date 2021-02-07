@@ -42,11 +42,11 @@ function newMap(position) {
                       `<span>Your Location</span>` +
                       `<span>Lat: <em>${position.coords.latitude.toFixed(4)}</em> | Lng: <em>${position.coords.longitude.toFixed(4)}</em></span>` +
                       `</div>`;
-    // Display user location on map. 
-        homeWindow = new google.maps.InfoWindow() 
-        homeWindow.setPosition({ lat: latitude, lng: longitude});
-        homeWindow.setContent(LocationMsg);
-        homeWindow.open(map);
+    // Display user location on map.
+        infoWindow = new google.maps.InfoWindow() 
+        infoWindow.setPosition({ lat: latitude, lng: longitude});
+        infoWindow.setContent(LocationMsg);
+        infoWindow.open(map);
         map.setCenter({ lat: latitude, lng: longitude});
     // Draw radius on map.
     radiusCircle = new google.maps.Circle({
@@ -95,7 +95,6 @@ function createContent(place) {
             var markerName = `<div class='map-popup'>` +
                              `<span>${place.name}</span>` +
                              `</div>`;
-                infoWindow = new google.maps.InfoWindow();
                 infoWindow.setPosition(destination);
                 infoWindow.setContent(markerName);
                 infoWindow.open(map);
