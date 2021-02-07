@@ -41,6 +41,7 @@ on green spaces for walking within their vicinity.
 Users will liekly be keen on outdoors or walking. 
 Owing to the lockdown, and people wanting to be outdoors more, we could a variety of users. 
 
+
 **The aim of this project is to:**
 - Be simple and easy to use.
 - Visually pleasing. 
@@ -53,6 +54,7 @@ Owing to the lockdown, and people wanting to be outdoors more, we could a variet
 - Allow the user to customise their experience. 
 - Provide a clear a help section.
 
+
 **Business/ Monetisation**
 - Advertising would be the main monetisation route, the site has ample space for unintrusive advertising. 
 
@@ -62,6 +64,7 @@ Owing to the lockdown, and people wanting to be outdoors more, we could a variet
 - I want to have access to the information available in as few steps of possible
 - I definitely want to know the walking time and distance. 
 - I want to see closer options
+
 
 **Returning & Regular User Stores**
 - I want to be able to customise by experiance. 
