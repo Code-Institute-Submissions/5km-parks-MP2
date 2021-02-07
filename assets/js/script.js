@@ -50,7 +50,7 @@ window.addEventListener('load', function() {
             header.innerHTML = "5KM";
             map.setZoom(11);
         } else if (radius == 3000) {
-            map.setZoom(11);
+            map.setZoom(12);
             header.innerHTML = "3KM";
         } else {
             map.setZoom(13);

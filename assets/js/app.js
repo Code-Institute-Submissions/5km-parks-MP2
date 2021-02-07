@@ -52,10 +52,10 @@ function newMap(position) {
     // Draw radius on map.
     radiusCircle = new google.maps.Circle({
         strokeColor: "#0f0f0f",
-        strokeOpacity: 0.5,
+        strokeOpacity: 0.6,
         strokeWeight: 2,
         fillColor: "#0f0f0f",
-        fillOpacity: 0.15,
+        fillOpacity: 0.2,
         map,
         center: { lat: latitude, lng: longitude},
         radius: radius,
