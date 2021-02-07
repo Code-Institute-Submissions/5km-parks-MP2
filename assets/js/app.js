@@ -171,7 +171,7 @@ function calculateAndDisplayRoute(directionsService, destination, place) {
                             document.getElementById('mapContent').innerHTML =
                                 `<div class="park-container">` +
                                 `<div class ="park-item">` + 
-                                `<div class ="park-img" style="background: url(${place.photos[0].getUrl()}); ${themeStyle}" alt="${place.name}" ></div>` + 
+                                `<div class ="park-img" id="parkImg" style="background: url(${place.photos[0].getUrl()}); ${themeStyle}" alt="${place.name}" ></div>` + 
                                 `</div>` +
                                 `</div>` +
                                 `<div class="park-data">`+

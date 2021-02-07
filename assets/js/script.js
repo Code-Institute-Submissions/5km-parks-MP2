@@ -99,6 +99,7 @@ window.addEventListener('load', function() {
                 toggleTheme('dark');
             } else {
                 toggleTheme('light');
+                document.getElementById('parkImg').style.removeProperty('filter');
             }
             event.target.classList.toggle('active');
         });
