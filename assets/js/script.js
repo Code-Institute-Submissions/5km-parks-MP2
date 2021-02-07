@@ -87,17 +87,22 @@ window.addEventListener('load', function() {
     var controls = document.querySelectorAll('.colour-controls');
     var colour;
 
-    controls.forEach(item => {
-    item.addEventListener('click', event => {
-        document.querySelectorAll('.colour-controls').forEach(item => {
-            item.classList.remove('active');
+        controls.forEach(item => {
+            item.addEventListener('click', event => {
+                if (map) {
+                    document.querySelectorAll('.colour-controls').forEach(item => {
+                        item.classList.remove('active');
+                    })
+                    event.target.classList.toggle('active');
+                    colour = event.target.getAttribute('data-colour');
+                    radiusCircle.setOptions({fillColor: colour});
+                    radiusCircle.setOptions({strokeColor: colour});
+                } else {
+                    document.getElementById('customiseError').classList.add('active');
+                    document.getElementById('cusError').innerHTML = "Please wait until map loads.";
+                }
+            })  
         })
-        event.target.classList.toggle('active');
-        colour = event.target.getAttribute('data-colour');
-        radiusCircle.setOptions({fillColor: colour});
-        radiusCircle.setOptions({strokeColor: colour});
-    })
-  })
 });
 
 // Dark Mode Customise Buttons
