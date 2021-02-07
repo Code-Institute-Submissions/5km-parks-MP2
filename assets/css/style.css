@@ -477,9 +477,16 @@ p.location-error a {
     padding-bottom: 0.5rem;
 }
 
-.about-logo h2,
+.about-logo h2 {
+    color: #ffffff;
+}
+
 .help-logo h2 {
     color: var(--theme-green);
+}
+
+.about-logo h2,
+.help-logo h2 {
     font-size: 1.4rem;
     position: relative;
 }
