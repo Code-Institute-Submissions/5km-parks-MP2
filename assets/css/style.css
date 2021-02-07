@@ -589,6 +589,7 @@ p.location-error a {
     width: 100%;  
     -webkit-animation: fade .3s ease-out;
     -moz-animation: fade .3s ease-out;
+    z-index: 2;
 }
 
 @-webkit-keyframes fade {
