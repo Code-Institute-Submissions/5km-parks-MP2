@@ -79,7 +79,6 @@ em {
     filter: invert(1) hue-rotate(180deg);
 }
 
-
 /***** Header *****/
 .head-container {
     display: flex;
@@ -255,6 +254,7 @@ p.location-error a {
     text-align: center;
     color: #ffffff;
     font-size: 1.1rem;
+    font-weight: 500;
     letter-spacing: 0.0025rem;
     text-transform: uppercase;
     padding: 1rem 0;
@@ -642,4 +642,54 @@ p.location-error a {
     flex-direction: column;
     align-items: center;
     padding: 0.5rem;
+}
+
+/***** Responsive Styles *****/
+
+/** Tablet **/
+@media only screen and (min-width: 768px) {
+    .head-container {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .header-content {
+        padding: 0 0 0 2rem;
+    }
+    .main-content {
+        padding: 1rem 0 1rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .main-content-container {
+          grid-column-start: 1;
+          grid-column-end: 3;
+    }
+    .map-content-area-button,
+    .customise-area-button {
+        display: none;
+    }
+    .customise-area-container {
+        padding: 0;
+    }
+    .customise-area-container h2 {
+        display: none;
+    }
+    .customise-panel {
+        margin-right: 0.5rem;
+    }
+    .about-container {
+        height: fit-content;
+        margin: 0;
+        margin-left: 0.5rem;
+    }
+    .help-active {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .help-overlay-container {
+        height: 70%;
+        width: 50%;
+    }
 }
