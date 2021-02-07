@@ -158,12 +158,12 @@ function calculateAndDisplayRoute(directionsService, destination, place) {
                                  `<span>${timeMn.toFixed(1)} minutes walk..</span>` +
                                  `</div>`;  
                 var cardHeight = document.getElementById('mapContent').scrollHeight;
-                var html = document.getElementsByTagName('html')[0].getAttribute('data-theme');
+                var theme = localStorage.getItem('theme');
                 var themeStyle;
-                    if (html != null) {
-                        themeStyle = 'filter: invert(1) hue-rotate(180deg);'
+                    if (theme == null || theme == "light" ) {
+                        themeStyle = 'filter: none';
                     } else {
-                        themeStyle = ''
+                        themeStyle = 'filter: invert(1) hue-rotate(180deg);';
                     }
                             infoWindow.setContent(markerResponce);
                             document.getElementById('mapContent').style.height = `calc(${cardHeight}px)`;

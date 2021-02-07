@@ -101,7 +101,7 @@ window.addEventListener('load', function() {
 window.addEventListener('load', function() {
     var controls = document.querySelectorAll('.theme-controls');
     var html = document.getElementsByTagName('html')[0];
-    var img = document.getElementById('parkImg');
+    
     var toggleTheme = (theme) => {
         html.dataset.theme = theme;
     };
@@ -116,13 +116,9 @@ window.addEventListener('load', function() {
                 localStorage.setItem("theme", "dark" ); 
             } else {
                 toggleTheme('light');
-                 localStorage.setItem("theme", "light" );
-                    if (img != null) {
-                        img.style.removeProperty('filter');
-            }       }
-            event.target.classList.toggle('active');
-
-           
+                localStorage.setItem("theme", "light" );
+            }  
+        event.target.classList.toggle('active');
         });
     });
 });

@@ -67,6 +67,10 @@ html[data-theme='dark'] {
     filter: invert(1) hue-rotate(180deg);
 }
 
+.park-img-invert {
+    filter: invert(1) hue-rotate(180deg);
+}
+
 /***** Layout Settings *****/
 
 
