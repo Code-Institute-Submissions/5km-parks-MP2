@@ -27,16 +27,16 @@ And discover new or forgotten green spaces with their immediate vicinity.
 
 
 
-### User Experience (UX)
+## User Experience (UX)
 
-## Breif 
+#### Breif 
 I wanted to create an app that will provide a simple and streamlined way for users to access immediate details
 on green spaces for walking within their vicinity. 
 Users will liekly be keen on outdoors or walking. 
 Owing to the lockdown, and people wanting to be outdoors more, we could a variety of users. 
 
 
-## The aim of this project is to:
+#### The aim of this project is to:
 - Be simple and easy to use.
 - Visually pleasing. 
 - Display a 5km radius around the user's current location on a map. 
@@ -49,26 +49,26 @@ Owing to the lockdown, and people wanting to be outdoors more, we could a variet
 - Provide a clear a help section.
 
 
-## Business/ Monetisation**
+#### Business/ Monetisation**
 - Advertising would be the main monetisation route, the site has ample space for unintrusive advertising. 
 
 
-## New User Stories**
+#### New User Stories**
 - I want the purpose to be obvious or easy to figure out
 - I want to have access to the information available in as few steps of possible
 - I definitely want to know the walking time and distance. 
 - I want to see parks at nearer proximity. 
 
 
-## Returning & Regular User Stores**
+#### Returning & Regular User Stores**
 - I want to be able to customise by experiance. 
 - I want my theme settings to be rememberd for my next visit. 
 
 
 
-### Design (UX)
+## Design (UX)
 
-## Colours 
+#### Colours 
 
 A simple palette of colours was chosen. 
 The goal is to convey the relationship with ourdoors or green space. 
