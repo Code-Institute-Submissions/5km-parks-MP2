@@ -76,29 +76,29 @@ The goal is to convey the relationship with ourdoors or green space.
 **Four main colours**
 
 Green - #3FB777
-![Green](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/#3FB777.png "Green - #3FB777")
+![Green](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/%233FB777.png "Green - #3FB777")
 
 Taupe - #D9D9D9
-![Taupe](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/#0F0F0F.png "Taupe - #D9D9D9")
+![Taupe](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/%230F0F0F.png "Taupe - #D9D9D9")
 
 Black - #0F0F0F
 ![Black](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/%230F0F0F.png "Black - #0F0F0F")
 
 White - #FFFFFF
-![Whtie](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/#FFFFFF.png "White - #FFFFFF")
+![Whtie](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/%23FFFFFF.png "White - #FFFFFF")
 
 
 **Four secondary colours**
 
-Red - #F86C6C
-![Red](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/#F86C6C.png "Red - #F86C6C")
+Red - #F86C6C\
+![Red](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/%23F86C6C.png "Red - #F86C6C")
 
-Blue - #1F6DFF
-![Blue](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/#1F6DFF.png "Blue - #1F6DFF")
+Blue - #1F6DFF\
+![Blue](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/%231F6DFF.png "Blue - #1F6DFF")
 
-Orange - #FF8A27
-![Black](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/#FF8A27.png "Orange - #FF8A27")
+Orange - #FF8A27\
+![Black](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/%23FF8A27.png "Orange - #FF8A27")
 
-Grey - #99A59E
-![Grey](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/#99A59E.png "Grey - #99A59E")
+Grey - #99A59E 
+![Grey](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/%2399A59E.png "Grey - #99A59E")
 
