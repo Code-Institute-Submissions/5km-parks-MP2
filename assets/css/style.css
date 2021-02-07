@@ -479,7 +479,7 @@ p.location-error a {
 
 .about-logo h2,
 .help-logo h2 {
-    color: #ffffff;
+    color: var(--theme-green);
     font-size: 1.4rem;
     position: relative;
 }
@@ -597,7 +597,7 @@ p.location-error a {
 }
 
 .heading {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .heading h2 {
