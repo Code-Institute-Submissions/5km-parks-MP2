@@ -22,7 +22,6 @@ And discover new or forgotten green spaces with their immediate vicinity.
 
 <img src="https://github.com/asdub/5km-parks-MP2/blob/master/readme/screenshots/desktop.png" alt="5km Parks Desktop Screenshot"/>
 
- 
 ## Contents 
 
 
@@ -101,4 +100,17 @@ Orange - *#FF8A27*\
 
 Grey - *#99A59E*\
 ![Grey](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/%2399A59E.png "Grey - #99A59E")
+
+
+#### Wireframes 
+
+![Wireframes](https://github.com/asdub/5km-parks-MP2/blob/master/readme/wireframes.png "Wireframes")
+
+Mock Ups were completed for Desktop, Tablet & mobile devices. 
+
+Wireframes can be viewed in full resolution [here](https://xd.adobe.com/view/44519a7f-885e-48e5-988e-39706e3ca85a-1102/?fullscreen).
+
+
+*Design changed during production*
+During the build of this app it was decided on the desktop version that the park infor card is better positon below, as with the table and mobile versions.\
 
