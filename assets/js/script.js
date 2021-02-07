@@ -1,3 +1,18 @@
+window.addEventListener('load', (event) => {
+    const html = document.getElementsByTagName('html')[0];
+    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+    var controls = document.body.querySelector('.theme-controls')
+        if (currentTheme) {
+            html.dataset.theme = currentTheme;
+            if (currentTheme == 'dark') {
+                 controls.classList.toggle('active');
+                 document.body.querySelector('.theme-controls[data-theme="on"]').classList.toggle('active');
+            }
+        }
+        console.log('Current Theme is:', currentTheme);
+});
+
+
 //Buttons and scroll to section
 window.addEventListener('load', function() {
     var buttons = document.querySelectorAll('.white-btn-large');
@@ -82,10 +97,11 @@ window.addEventListener('load', function() {
 });
 
 // Dark Mode 
-
+// https://livecodestream.dev/post/a-better-approach-to-dark-mode-on-your-website/
 window.addEventListener('load', function() {
     var controls = document.querySelectorAll('.theme-controls');
     var html = document.getElementsByTagName('html')[0];
+    var img = document.getElementById('parkImg');
     var toggleTheme = (theme) => {
         html.dataset.theme = theme;
     };
@@ -97,14 +113,20 @@ window.addEventListener('load', function() {
             });
             if (event.target.getAttribute('data-theme') == "on") {
                 toggleTheme('dark');
+                localStorage.setItem("theme", "dark" ); 
             } else {
                 toggleTheme('light');
-                document.getElementById('parkImg').style.removeProperty('filter');
-            }
+                 localStorage.setItem("theme", "light" );
+                    if (img != null) {
+                        img.style.removeProperty('filter');
+            }       }
             event.target.classList.toggle('active');
+
+           
         });
     });
 });
+
 
 
 
