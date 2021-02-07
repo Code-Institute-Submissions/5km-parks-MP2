@@ -55,7 +55,7 @@ function newMap(position) {
         strokeOpacity: 0.5,
         strokeWeight: 2,
         fillColor: "#0f0f0f",
-        fillOpacity: 0.2,
+        fillOpacity: 0.15,
         map,
         center: { lat: latitude, lng: longitude},
         radius: radius,
@@ -85,9 +85,18 @@ function searchParks() {
 // https://developers.google.com/maps/documentation/javascript/directions
 function createContent(place) {
     const directionsService = new google.maps.DirectionsService();
+    var parkMarker = {
+                    url: './assets/img/map-marker.png',
+                    size: new google.maps.Size(200, 200),
+                    scaledSize: new google.maps.Size(32, 32),
+                    anchor: new google.maps.Point(16, 16),
+                    labelOrigin: new google.maps.Point(16, 16)
+                    
+                };
     if (place.user_ratings_total > 100) {
         const marker = new google.maps.Marker({
             map: map,
+            icon: parkMarker,
             animation: google.maps.Animation.DROP,
             position: place.geometry.location,
         });
