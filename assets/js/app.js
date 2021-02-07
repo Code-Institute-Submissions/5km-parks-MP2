@@ -1,9 +1,9 @@
 // Get user location
 function getLocation() {
     var options = {
-    enableHighAccuracy: true,
-    timeout: 5000,
-    maximumAge: 0
+        enableHighAccuracy: true,
+        timeout: 5000,
+        maximumAge: 0
     };  
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(newMap, locError, options);
@@ -14,9 +14,9 @@ function getLocation() {
 // If user location cannot be found
 function locError(err) {
     var userMessage = document.querySelector('.location-status')
-    console.log("Error finding your location", err);
-    userMessage.classList.toggle('location-error');
-    userMessage.innerHTML =  `Location could not be found.<br>Please <a href="/">reolad page</a> and try again.`;
+        console.log("Error finding your location", err);
+        userMessage.classList.toggle('location-error');
+        userMessage.innerHTML =  `Location could not be found.<br>Please <a href="/">reolad page</a> and try again.`;
 }
 
 // Declaring Global Variables 
@@ -26,7 +26,8 @@ var radius = 5000; //default radius 5km
 let map, infoWindow, origin, radiusCircle;
 
 
-// Create Map, Radius and Google Palces Request 
+// Create Map, Radius and Google Palces Request
+// https://developers.google.com/maps/documentation/javascript/examples/map-geolocation 
 function newMap(position) {
     const { latitude, longitude } = position.coords;
         origin = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
@@ -74,12 +75,14 @@ function searchParks() {
         type: ['park']
     };
     // Google Places request 
+    // https://developers.google.com/maps/documentation/javascript/places
     let service = new google.maps.places.PlacesService(map);
         service.nearbySearch(request, callback);
 }
 
 
 // Find required content - plot markers and data and position map to destination.
+// https://developers.google.com/maps/documentation/javascript/directions
 function createContent(place) {
     const directionsService = new google.maps.DirectionsService();
     if (place.user_ratings_total > 100) {
@@ -107,7 +110,7 @@ function createContent(place) {
 
 //Used to remove exisitng markers from arrray/ map - called when user radius is changed
 function reloadMarkers() {
-    for (var i=0; i<markers.length; i++) {
+    for (var i = 0; i < markers.length; i++) {
         markers[i].setMap(null);
     }
     markers = [];
@@ -167,7 +170,7 @@ function calculateAndDisplayRoute(directionsService, destination, place) {
     }
   );
 }
-//Solution to clear each route render: 
+//Solution to clear each route render (also applied to markers) : 
 //https://stackoverflow.com/questions/32676497/google-map-api-v3-cannot-clear-the-previous-mutiple-routes-history
 
 

@@ -45,6 +45,7 @@ window.addEventListener('load', function() {
         radiusCircle.setRadius(radius);
         userPosition = new google.maps.LatLng(localStorage.getItem('position_lat'), localStorage.getItem('position_lng'));
         infoWindow.close();
+        // Handle secondary elements effected by user radius button
         if (radius == 5000) {
             header.innerHTML = "5KM";
             map.setZoom(11);
