@@ -158,13 +158,20 @@ function calculateAndDisplayRoute(directionsService, destination, place) {
                                  `<span>${timeMn.toFixed(1)} minutes walk..</span>` +
                                  `</div>`;  
                 var cardHeight = document.getElementById('mapContent').scrollHeight;
+                var html = document.getElementsByTagName('html')[0].getAttribute('data-theme');
+                var themeStyle;
+                    if (html != null) {
+                        themeStyle = 'filter: invert(1) hue-rotate(180deg);'
+                    } else {
+                        themeStyle = ''
+                    }
                             infoWindow.setContent(markerResponce);
                             document.getElementById('mapContent').style.height = `calc(${cardHeight}px)`;
                             document.getElementById('mapContent').classList.add('active');
                             document.getElementById('mapContent').innerHTML =
                                 `<div class="park-container">` +
                                 `<div class ="park-item">` + 
-                                `<div class ="park-img" style="background: url(${place.photos[0].getUrl()})" alt="${place.name}"></div>` + 
+                                `<div class ="park-img" style="background: url(${place.photos[0].getUrl()}); ${themeStyle}" alt="${place.name}" ></div>` + 
                                 `</div>` +
                                 `</div>` +
                                 `<div class="park-data">`+
