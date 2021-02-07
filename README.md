@@ -9,7 +9,7 @@
 **A live version of this project can be found [here](https://asdub.github.io/5km-parks-MP2/)**
 
 
-#### Project Description
+### Project Description
 This project was made as part of my Code Institute Full Stack Development Course. 
 
 As we are all well aware, lockdowns are not fun! 
@@ -24,7 +24,7 @@ And discover new or forgotten green spaces with their immediate vicinity.
 <img src="https://github.com/asdub/5km-parks-MP2/blob/master/readme/iphone.png" width="150" alt="5km Parks iPhone Screenshot" />
 ————————————
 Mobile Screenshot
-<img src="https://github.com/asdub/5km-parks-MP2/blob/master/readme/desktop.png" width="250" alt="5km Parks Desktop Screenshot"/>
+<img src="https://github.com/asdub/5km-parks-MP2/blob/master/readme/desktop.png" width="300" alt="5km Parks Desktop Screenshot"/>
 ————————————
 Desktop Screenshot
 
