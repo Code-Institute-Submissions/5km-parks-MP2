@@ -765,6 +765,7 @@ p.location-error a {
         grid-column-start: 3;
         grid-column-end: 4;
         margin: 0.5rem 1rem;
+        z-index: 1;
     }
     .footer {
         justify-content: flex-end;
