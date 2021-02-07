@@ -1,3 +1,4 @@
+// Event Listener for Dark Mode
 window.addEventListener('load', (event) => {
     const html = document.getElementsByTagName('html')[0];
     const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
@@ -7,6 +8,9 @@ window.addEventListener('load', (event) => {
             if (currentTheme == 'dark') {
                  controls.classList.toggle('active');
                  document.body.querySelector('.theme-controls[data-theme="on"]').classList.toggle('active');
+                 document.body.querySelector('.colour-controls[data-colour="#0F0F0F"]').innerHTML = "White";
+            } else {
+                document.body.querySelector('.colour-controls[data-colour="#0F0F0F"]').innerHTML = "Black";
             }
         }
         console.log('Current Theme is:', currentTheme);
@@ -101,7 +105,7 @@ window.addEventListener('load', function() {
 window.addEventListener('load', function() {
     var controls = document.querySelectorAll('.theme-controls');
     var html = document.getElementsByTagName('html')[0];
-    
+
     var toggleTheme = (theme) => {
         html.dataset.theme = theme;
     };
@@ -114,9 +118,11 @@ window.addEventListener('load', function() {
             if (event.target.getAttribute('data-theme') == "on") {
                 toggleTheme('dark');
                 localStorage.setItem("theme", "dark" ); 
+                document.body.querySelector('.colour-controls[data-colour="#0F0F0F"]').innerHTML = "White";
             } else {
                 toggleTheme('light');
                 localStorage.setItem("theme", "light" );
+                document.body.querySelector('.colour-controls[data-colour="#0F0F0F"]').innerHTML = "Black";
             }  
         event.target.classList.toggle('active');
         });
