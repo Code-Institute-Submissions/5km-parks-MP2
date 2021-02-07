@@ -8,8 +8,61 @@
 #### A live version of this project can be found [here](https://asdub.github.io/5km-parks-MP2/)
 
 <img src="https://github.com/asdub/5km-parks-MP2/blob/master/readme/iphone.png" width="150" alt="5km Parks iPhone Screenshot" />
-—————————————————
-iPhone Screenshot
+————————————
+Mobile Screenshot
 <img src="https://github.com/asdub/5km-parks-MP2/blob/master/readme/desktop.png" width="200" alt="5km Parks Desktop Screenshot"/>
-—————————————————
+————————————
 Desktop Screenshot
+
+** Project Description
+This project was made as part of my Code Institute Full Stack Development Course. 
+
+As we are all well aware, lockdowns are not fun! 
+With everyone spending more and more time indoors the importance of getting some fresh air has never been greater. 
+I decided to create a web app which displays local open parks with a set radius of a users location. 
+
+Users can keep within travel restrictions *(5km from your home as of 07/02/21)*. 
+And discover new or forgotten green spaces with their immediate vicinity. 
+
+## Contents 
+
+
+
+## User Experience (UX)
+
+I wanted to create an app that will provide a simple and streamlined way for users to access immediate details
+on green spaces for walking within their vicinity. 
+Users will liekly be keen on outdoors or walking. 
+Owing to the lockdown, and people wanting to be outdoors more, we could a variety of users. 
+
+** The aim of this project is to: 
+- Be simple and easy to use.
+- Visually pleasing. 
+- Display a 5km radius around the user's current location on a map. 
+- Plot parks within that radius. 
+- Only display open parks. 
+- Provide functionality for users to see route to a park they have selected. 
+- Provide the user with the walking time & distance to their selected park. 
+- Provide the user with a rating of their selected park. 
+- Allow the user to customise their experience. 
+- Provide a clear a help section.
+
+** Business/ Monetisation
+- Advertising would be the main monetisation route, the site has ample space for unintrusive advertising. 
+
+
+** Initial User Stories 
+- I want the purpose to be obvious or easy to figure out
+- I want to have access to the information available in as few steps of possible
+- I definitely want to know the walking time and distance. 
+- I want to see closer options
+
+** Returning & Regular User Stores 
+- I want to be able to customise by experiance. 
+- I want my theme settings to be remembers for my next visit. 
+
+
+
+
+
+
