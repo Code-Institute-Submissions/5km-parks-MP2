@@ -108,6 +108,7 @@ em {
 
 .header-content p span {
     color: var(--theme-green);
+    transition: all 0.3s ease-in;
 }
 
 .help-toggle {

@@ -31,6 +31,7 @@ window.addEventListener('load', function() {
 //Customise Panel Radius Buttons
 window.addEventListener('load', function() {
     var controls = document.querySelectorAll('.radius-controls');
+    var header = document.querySelector('#header-radius');
     var userRadius, userPosition;
 
     controls.forEach(item => {
@@ -45,11 +46,14 @@ window.addEventListener('load', function() {
         userPosition = new google.maps.LatLng(localStorage.getItem('position_lat'), localStorage.getItem('position_lng'));
         infoWindow.close();
         if (radius == 5000) {
+            header.innerHTML = "5KM";
             map.setZoom(11);
         } else if (radius == 3000) {
-             map.setZoom(11);
+            map.setZoom(11);
+            header.innerHTML = "3KM";
         } else {
             map.setZoom(13);
+            header.innerHTML = "1KM";
         }
         map.setCenter(userPosition)
         reloadRoute();
