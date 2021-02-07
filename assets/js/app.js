@@ -64,8 +64,8 @@ function newMap(position) {
     searchParks()
 
     // Storing user location in session to use again if map customised. 
-    sessionStorage.setItem('position_lat', position.coords.latitude ); // TEMP 
-    sessionStorage.setItem('position_lng', position.coords.longitude ); // TEMP
+    sessionStorage.setItem('position_lat', position.coords.latitude ); 
+    sessionStorage.setItem('position_lng', position.coords.longitude ); 
 }
 
 function searchParks() {
