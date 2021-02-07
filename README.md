@@ -28,7 +28,7 @@ And discover new or forgotten green spaces within their immediate vicinity.
 
 ## User Experience (UX)
 
-#### Breif 
+#### Brief 
 I wanted to create an app which will provide a simple and streamlined way for users to access 
 immediate details on green spaces for walking within their vicinity. 
 Users will liekly be keen on outdoors or walking. 
@@ -48,18 +48,18 @@ Owing to the lockdown, and people wanting to be outdoors more, we could see a wi
 - Provide a clear help section.
 
 
-#### Business/ Monetisation**
+#### Business/ Monetisation
 - Advertising would be the main monetisation route, the site has ample space for unintrusive advertising. 
 
 
-#### New User Stories**
+#### New User Stories
 - I want the purpose to be obvious or easy to figure out
 - I want to have access to the information available in as few steps of possible
 - I definitely want to know the walking time and distance. 
 - I want to see parks at a closer proximity. 
 
 
-#### Returning & Regular User Stores**
+#### Returning & Regular User Stores
 - I want to be able to customise by experiance. 
 - I want my theme settings to be rememberd for my next visit. 
 
@@ -137,7 +137,7 @@ White - *#FFFFFF*\
 ![Whtie](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/%23FFFFFF.png "White - #FFFFFF")
 
 
-*Secondary font colours*\
+Secondary font colours\
 *Used for secondary links and warnings.*
 
 Medium Grey - *#707070*\
@@ -157,4 +157,5 @@ This allowed me to import the SVG's into a vector program to make custom markers
 however that in itself persented another set of challenges (for another project!).*
 
 The following icons have been used throughout the app,\
-![Icons](https://github.com/asdub/5km-parks-MP2/blob/master/readme/icons.png "Icons")
+<img src="https://github.com/asdub/5km-parks-MP2/blob/master/readme/icons.png" width="150" alt="Font Awesome Icons" />
+
