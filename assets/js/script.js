@@ -1,6 +1,6 @@
 // Event Listener for Dark Mode
 window.addEventListener('load', (event) => {
-    const html = document.getElementsByTagName('html')[0];
+    const html = document.getElementById('main');
     const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
     var controls = document.body.querySelector('.theme-controls')
         if (currentTheme) {
@@ -100,11 +100,11 @@ window.addEventListener('load', function() {
   })
 });
 
-// Dark Mode 
+// Dark Mode Customise Buttons
 // https://livecodestream.dev/post/a-better-approach-to-dark-mode-on-your-website/
 window.addEventListener('load', function() {
     var controls = document.querySelectorAll('.theme-controls');
-    var html = document.getElementsByTagName('html')[0];
+    var html = document.getElementById('main');
 
     var toggleTheme = (theme) => {
         html.dataset.theme = theme;
@@ -128,12 +128,3 @@ window.addEventListener('load', function() {
         });
     });
 });
-
-
-
-
-
-
-
-
-
