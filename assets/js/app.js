@@ -63,8 +63,9 @@ function newMap(position) {
     // Google Places request object for parks within a 5km radius.
     searchParks()
 
-    localStorage.setItem('position_lat', position.coords.latitude ); // TEMP 
-    localStorage.setItem('position_lng', position.coords.longitude ); // TEMP
+    // Storing user location in session to use again if map customised. 
+    sessionStorage.setItem('position_lat', position.coords.latitude ); // TEMP 
+    sessionStorage.setItem('position_lng', position.coords.longitude ); // TEMP
 }
 
 function searchParks() {

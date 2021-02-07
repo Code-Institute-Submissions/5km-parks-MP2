@@ -17,7 +17,6 @@ window.addEventListener('load', function() {
   })
 });
 
-
 //Help section overlay. 
 window.addEventListener('load', function() {
   document.querySelectorAll('.help').forEach(item => {
@@ -28,7 +27,7 @@ window.addEventListener('load', function() {
   })
 });
 
-//Customise Panel Radius Buttons
+//Customise Panel Radius Button. 
 window.addEventListener('load', function() {
     var controls = document.querySelectorAll('.radius-controls');
     var header = document.querySelector('#header-radius');
@@ -43,7 +42,7 @@ window.addEventListener('load', function() {
         userRadius = parseInt(event.target.getAttribute('data-radius'));
         radius = userRadius;
         radiusCircle.setRadius(radius);
-        userPosition = new google.maps.LatLng(localStorage.getItem('position_lat'), localStorage.getItem('position_lng'));
+        userPosition = new google.maps.LatLng(sessionStorage.getItem('position_lat'), sessionStorage.getItem('position_lng'));
         infoWindow.close();
         // Handle secondary elements effected by user radius button
         if (radius == 5000) {
