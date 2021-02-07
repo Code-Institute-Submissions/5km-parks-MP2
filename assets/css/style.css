@@ -141,7 +141,8 @@ em {
 
 /** Main Content - Map **/
 .map-area-container {
-    box-shadow: 2.5px 5px 10px -5px rgb(0 0 0 / 0.2);
+    box-shadow: 2.5px 5px 10px -5px rgb(0 0 0 / 0.3);
+    margin: 0 0.5rem;
 }
 
 .map-area {
