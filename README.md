@@ -296,7 +296,7 @@ WC3 CSS Validator found 1 error & 38 warnings:
 
 ### Google Lighthouse
 
-**Initial Test** Destop :
+#### Initial Test
 ![Lighthouse Results](https://github.com/asdub/5km-parks-MP2/blob/master/readme/screenshots/initial_lighthouse_desktop.png "Lighthouse Results")
 
 1. Best Practices,
@@ -309,3 +309,27 @@ WC3 CSS Validator found 1 error & 38 warnings:
 2. SEO,
     - Document does not have a meta description.
         [x] Meta tags added to index.html.
+
+#### Re Test
+![Lighthouse Results](https://github.com/asdub/5km-parks-MP2/blob/master/readme/screenshots/second_lighthouse.png "Lighthouse Results")
+
+**Performance**\
+No external frameworks such as bootstrap was used. 
+I believe this helped greatly with performance.
+
+**Accessibility**\
+I tired to ensure good contrast between colours. 
+Ligthouse seems to have picked up on some of the more fun colours as not having sufficient contrast ratio. 
+In this situation I beleive it is ok, as it's the colour itself that I am trying to convey. 
+
+**Best Practices**\
+Adding the noreferrer rel increased the Best Practices score. 
+\
+The app requests geolocation on page load. 
+Which I first decided was a required feature. Having read more into it, I would not do this in the future. 
+And would prompt the user in app beforehand. 
+
+**SEO**\
+The SEO scroe increase to 100 with the addition correct meta tags. 
+[Thank you! Heymeta ](https://www.heymeta.com/ )
+
