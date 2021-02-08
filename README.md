@@ -295,3 +295,17 @@ WC3 CSS Validator found 1 error & 38 warnings:
 
 
 ### Google Lighthouse
+
+**Initial Test** Destop :
+![Lighthouse Results](https://github.com/asdub/5km-parks-MP2/blob/master/readme/screenshots/initial_lighthouse_desktop.png "Lighthouse Results")
+
+1. Best Practices,
+    - Links to cross-origin destinations are unsafe.
+        [x] Added `rel="noreferrer" to <a> tags. 
+    
+    - Requests the geolocation permission on page load
+        [ ] Oversight, I wanted the app to load as quickly as possible. In hindsight, it would be better to have a prompt. 
+
+2. SEO,
+    - Document does not have a meta description.
+        [x] Meta tags added to index.html.
