@@ -368,8 +368,8 @@ The follow screen sizes were tested using both above tools:
 |iPad Air 1 & 2	|1536 x 2048	|768 x 1024 |
 |iPad Mini 2 & 3|1536 x 2048	|768 x 1024 |
 |iPad Mini  	|768 x 1024	    |768 x 1024 |
-\
-\
+
+
 *Anroid Mobile & Tablet devices*
 | Device        | Pixel Size    | Viewport  |
 | ------------- |:-------------:| ---------:|
