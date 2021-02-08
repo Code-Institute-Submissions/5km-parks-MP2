@@ -567,7 +567,7 @@ I was unable to text on anything under IE11.
 #### User Stories
 
 **I want the app purpose to be obvious or easy to figure out**\
-<img src="https://github.com/asdub/5km-parks-MP2/blob/master/readme/screenshots/iphone.png" width="125" alt="5km Parks iPhone Screenshot" />
+<img src="https://github.com/asdub/5km-parks-MP2/blob/master/readme/screenshots/iphone.png" width="175" alt="5km Parks iPhone Screenshot" />
 
 From a design & branding perspective, 
 - I beleive the colour theme assist in guiding the user as it instills a sense of open spaces. 
