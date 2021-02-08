@@ -129,7 +129,7 @@ em {
 	color: var(--theme-green);
 	top: 0;
 	right: 0;
-	margin: calc(var(--theme-margin) + 1.1rem);
+	margin: calc(var(--theme-margin) + 1rem);
 	position: absolute;
 }
 

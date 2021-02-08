@@ -5,7 +5,7 @@
 window.addEventListener('load', (event) => {
 	const html = document.getElementById('main');
 	const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-	var controls = document.body.querySelector('.theme-controls')
+	var controls = document.body.querySelector('.theme-controls');
 	if (currentTheme) {
 		html.dataset.theme = currentTheme;
 		if (currentTheme == 'dark') {
@@ -29,14 +29,14 @@ window.addEventListener('load', function() {
 		item.addEventListener('click', event => {
 			document.querySelectorAll('.white-btn-large').forEach(item => {
 				item.classList.toggle('active');
-			})
+			});
 			event.target.classList.toggle('active');
 			link = "#" + event.target.getAttribute('data-link');
 			document.querySelector(link).scrollIntoView({
 				behavior: 'smooth'
 			});
-		})
-	})
+		});
+	});
 });
 
 //Help section overlay. 
@@ -45,8 +45,8 @@ window.addEventListener('load', function() {
 		item.addEventListener('click', event => {
 			document.querySelector('.help-overlay').classList.toggle('help-active');
 			document.getElementsByTagName('body')[0].classList.toggle('no-scroll');
-		})
-	})
+		});
+	});
 });
 
 //Customise Panel Radius Button. 
@@ -78,7 +78,7 @@ window.addEventListener('load', function() {
 					map.setZoom(13);
 					header.innerHTML = "1KM";
 				}
-				map.setCenter(userPosition)
+				map.setCenter(userPosition);
 				reloadRoute();
 				reloadMarkers();
 				searchParks();
@@ -86,8 +86,8 @@ window.addEventListener('load', function() {
 				document.getElementById('customiseError').classList.add('active');
 				document.getElementById('cusError').innerHTML = "Please wait until map loads.";
 			}
-		})
-	})
+		});
+	});
 });
 
 //Customise Panel Colour Buttons
@@ -100,7 +100,7 @@ window.addEventListener('load', function() {
 			if (map) {
 				document.querySelectorAll('.colour-controls').forEach(item => {
 					item.classList.remove('active');
-				})
+				});
 				event.target.classList.toggle('active');
 				colour = event.target.getAttribute('data-colour');
 				radiusCircle.setOptions({
@@ -113,8 +113,8 @@ window.addEventListener('load', function() {
 				document.getElementById('customiseError').classList.add('active');
 				document.getElementById('cusError').innerHTML = "Please wait until map loads.";
 			}
-		})
-	})
+		});
+	});
 });
 
 // Dark Mode Customise Buttons
