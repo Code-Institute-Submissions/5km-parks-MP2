@@ -459,15 +459,15 @@ p.location-error a {
 	color: #ffffff;
 }
 
-.colour-controls[data-colour="#3FB777"] {
-	border-color: #3FB777;
+.colour-controls[data-colour="#146a3c"] {
+	border-color: #146a3c;
 	background: transparent;
-	color: #3FB777;
+	color: #146a3c;
 }
 
-.colour-controls.active[data-colour="#3FB777"] {
-	border-color: #3FB777;
-	background: #3FB777;
+.colour-controls.active[data-colour="#146a3c"] {
+	border-color: #146a3c;
+	background: #146a3c;
 	color: #ffffff;
 }
 

@@ -217,6 +217,9 @@ But will still be able to use non map dependant functions such as dark mode.
 Distance in title updates with user radius selection. 
 As does the 'black' colour choice, which changes to white when dark mode is enabled. 
 
+### Future Features
+1. I would like to expand on storing customised settings beyong the dark mode. 
+2. Expand on the information available, and the place type to include other places suitable for walking such as beaches, forests etc. 
 
 ## Technologies
 *Languages, libraries, APIs, and version control*
@@ -340,15 +343,13 @@ The SEO scroe increase to 100 with the addition correct meta tags.
 
 ## Manual Testing 
 
-### Mobile 
-
 #### Responsive Testing
 Responsivity tested on physical iPhone & Anrdroid phones (iPhone 11 Pro Max / Samsung Galaxy s21)
 
 Also tested within mobile device views in Chrome Dev Tools & Safari Web Tools.
 The follow screen sizes were tested using both above tools: 
 
-*iOS Mobile & Tablet devices*
+**iOS Mobile & Tablet devices**
 | Device        | Pixel Size    | Viewport  |
 | ------------- |:-------------:| ---------:|
 |iPhone XR     | 828 x 1792.   | 414 x 896 |
@@ -370,7 +371,7 @@ The follow screen sizes were tested using both above tools:
 |iPad Mini  	|768 x 1024	    |768 x 1024 |
 
 
-*Anroid Mobile & Tablet devices*
+**Anroid Mobile & Tablet devices**
 | Device        | Pixel Size    | Viewport  |
 | ------------- |:-------------:| ---------:|
 |Nexus 6P	    | 1440 x 2560	|412 x 732q |
@@ -384,7 +385,7 @@ The follow screen sizes were tested using both above tools:
 |Google Pixel XL|	1440 x 2560	|412 x 732  |
 |Google Pixel	|1080 x 1920	|412 x 732  |
 
-*Desktop Browsers*
+**Desktops & Browsers**
 | Device        | Browser    | Browser 2 | Browser 3 |
 | ------------- |:----------:| ---------:| ---------:|
 |MacBook Pro    | Chrome     | Safari    | Firfox    |
@@ -435,11 +436,100 @@ The follow screen sizes were tested using both above tools:
     Customise Button
         - Make sure when active customise panel is scrolled into view. **
         - Enable dark mode, repeat check. 
+    
+    Customise Panel
+    *Radius Distance
+        - Make sure 5km is active on load. 
+        - Select 3km, make sure button,
+            - Turns active.
+            - Make sure 5km turns deactive.
+            - Map Circle radius change to 3km.
+            - Make sure map zoom level updates.
+            - Places search within new radius occurs.
+            - Distance in header updates.
+        - Select 1km, make sure button,
+            - Turns active.
+            - Make sure 3km turns deactive.
+            - Map Circle radius change to 1km.
+            - Make sure map zoom level updates.
+            - Places search within new radius occurs.
+            - Distance in header updates.
+        - Select 5km, make sure button,
+            - Turns active.
+            - Make sure 5km turns deactive.
+            - Map Circle radius change to 5km.
+            - Make sure map zoom level updates.
+            - Places search within new radius occurs.
+            - Distance in header updates.
+        - Select a map marker, select a radius,
+            - Make sure previous route clears on radius change. 
+        - Select a map marker, select a radius, enable dark mode
+            - Run through each of the steps in the secion above. 
+    
+    *Radius Colour 
+        - Make sure 'Black' is active on load. 
+        - Select 'Red' button, 
+            - Make sure button turns active.
+            - Check radius fill & stroke turned Red. 
+            - Make sure markers & infowidow remains on map canvas.
+        - Select 'Blue' button, 
+            - Make sure button turns active.
+            - Check radius fill & stroke turned Blue. 
+            - Make sure markers & infowidow remains on map canvas.
+        - Select 'Green' button, 
+            - Make sure button turns active.
+            - Check radius fill & stroke turned Green. 
+            - Make sure markers & infowidow remains on map canvas.
+        - Select 'Orange' button, 
+            - Make sure button turns active.
+            - Check radius fill & stroke turned Orange. 
+            - Make sure markers & infowidow remains on map canvas.
+        - Select 'Grey' button, 
+            - Make sure button turns active.
+            - Check radius fill & stroke turned Grey. 
+            - Make sure markers & infowidow remains on map canvas.
+        - Select 'Black' button, 
+            - Make sure button turns active.
+            - Check radius fill & stroke turned Black .
+            - Make sure markers & infowidow remains on map canvas.
+        - Enable dark mode, 
+            - Make sure Black button text changes to White. 
+            - Select a random button, 
+                - Follow each of the steps in the section above.
+        - Disable dark mode,
+            - Make sure White button text changes to Black. 
+
+    *Dark Mode 
+        - Make sure off is selected on first fisit and button is active. 
+        - Select On, 
+            - Make sure all colours have been inverted. 
+            - Make sure the park image has been excluded. 
+            - Check console log for theme update. 
+            - Make sure theme still active after browser close. 
+
+    Back to Map Button
+        - Make sure when active map section is scrolled into view. **
+        - Enable dark mode, repeat check. 
+
+    About Section
+        - Make sure icon & text visable and unobstructed.
+        - Check 'here' link opens.
+        - Enable dark mode, repeat check.  
+    
+    Footer 
+        -  Make sure both links function. 
+    
+        
+
+        
+
+
 
 
 
 ## Known Bugs
-    ** Smooth scrolling is currently not working on iOS devices 
+    ** Smooth scrolling is currently not working on iOS devices. 
+    ** When dark mode is enabled after a marker has been selected, the image inverts in colour.
     
         
 
