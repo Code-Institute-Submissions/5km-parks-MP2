@@ -214,7 +214,7 @@ But will still be able to use non map dependant functions such as Dark Mode.
 
 
 ## Technologies
-*Languages, libraries, APIS, and version control*
+*Languages, libraries, APIs, and version control*
 
 ### Languages
 - **[HTML5](https://html.com/html5/)**
@@ -225,15 +225,15 @@ But will still be able to use non map dependant functions such as Dark Mode.
 ### APIS Used 
 - **[Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview)**
 
-**Features Used:**\
-- [Map](https://developers.google.com/maps/documentation/javascript/reference/map#Map.constructor)
-- [Coordinates](https://developers.google.com/maps/documentation/javascript/reference/coordinates#LatLng)
-- [InfoWindow](https://developers.google.com/maps/documentation/javascript/reference/info-window#InfoWindow)
-- [Circle](https://developers.google.com/maps/documentation/javascript/reference/polygon#Circle)
-- [Places Service](https://developers.google.com/maps/documentation/javascript/reference/places-service#PlacesService)
-- [Directions Service](https://developers.google.com/maps/documentation/javascript/reference/directions#DirectionsService)
-- [Marker](https://developers.google.com/maps/documentation/javascript/reference/marker#Marker)
-- [Directions Renderer](https://developers.google.com/maps/documentation/javascript/reference/directions#DirectionsRenderer)
+    **Features Used:**
+    - [Map](https://developers.google.com/maps/documentation/javascript/reference/map#Map.constructor)
+    - [Coordinates](https://developers.google.com/maps/documentation/javascript/reference/coordinates#LatLng)
+    - [InfoWindow](https://developers.google.com/maps/documentation/javascript/reference/info-window#InfoWindow)
+    - [Circle](https://developers.google.com/maps/documentation/javascript/reference/polygon#Circle)
+    - [Places Service](https://developers.google.com/maps/documentation/javascript/reference/places-service#PlacesService)
+    - [Directions Service](https://developers.google.com/maps/documentation/javascript/reference/directions#DirectionsService)
+    - [Marker](https://developers.google.com/maps/documentation/javascript/reference/marker#Marker)
+    - [Directions Renderer](https://developers.google.com/maps/documentation/javascript/reference/directions#DirectionsRenderer)
 
 ### Version Control & Managment
 - [Git](https://git-scm.com/)
