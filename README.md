@@ -253,6 +253,7 @@ But will still be able to use non map dependant functions such as dark mode.
 This app has been deployed on GitHub Pages.\
 You can view a live version of the app [here](https://asdub.github.io/5km-parks-MP2/).
 
+#### GitHub Pages
 Deployong on Github pages is very straight forward.
 1. [Login](https://github.com/login) to your GitHub account([or join](https://github.com/join)).
 2. Navigate to or create the repository, in this case [5km-parks-MP2](https://github.com/asdub/5km-parks-MP2).
@@ -261,3 +262,15 @@ Deployong on Github pages is very straight forward.
 5. Leave the default folder as '/root'.
 6. Once ready, the URL will appear in the green banner above source.
 
+#### Fork
+1. [Login](https://github.com/login) to your GitHub account([or join](https://github.com/join)).
+2. Go to the repo by clicking [here](https://github.com/asdub/5km-parks-MP2).
+3. Click fork in the top right corner of the screen. 
+
+#### Clone (Local)
+1. [Login](https://github.com/login) to your GitHub account([or join](https://github.com/join)).
+2. Go to the repo by clicking [here](https://github.com/asdub/5km-parks-MP2).
+3. On the main page of the repository click on 'Code'. 
+4. Click on the 'Clipboard'/ copy icopy the clone URL (Clone with HTTPs). 
+4. In your local environment open your terminal, navigate to or create a directory.
+5. Paste the URL into your terminal and enter. The repo should be successfully cloned.  
