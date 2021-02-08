@@ -210,7 +210,7 @@ If the location cannot be found after a period of 5000ms.
 A prompt will appear on the map canvas informing the user and inviting them to reload the page. 
 
 If a user attempts to use a map control without a map present, they will also receive a notificaton. 
-But will still be able to use non map dependant functions such as Dark Mode. 
+But will still be able to use non map dependant functions such as dark mode. 
 
 
 ## Technologies
@@ -246,4 +246,16 @@ But will still be able to use non map dependant functions such as Dark Mode.
 - [JSfiffle](https://jsfiddle.net/)
 - [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)
 - [Safari Web Development Tools](https://developer.apple.com/safari/tools/)
+
+
+## Deployment 
+
+This app has been deployed on GitHub Pages.\
+Deployong on Github pages is very straight forward.\
+1. [Login](https://github.com/login) to your GitHub account([or join](https://github.com/join)).
+2. Navigate to or create the repository, in this case [5km-parks-MP2](https://github.com/asdub/5km-parks-MP2).
+3. On the menu below the repository title click on the settings cog. 
+4. Then scroll down to GitHub Pages and select 'master' or 'main' branch.
+5. Leave the default folder as '/root'.
+6. Once ready, the URL will appear in the green banner above source.
 
