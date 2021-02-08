@@ -122,8 +122,8 @@ This project uses [Google Fonts](https://fonts.google.com/).
 Only one font is in use,\
 **Roboto** in a weights of 400, 500 & 700.\
 
-![Roboto](https://github.com/asdub/5km-parks-MP2/blob/master/readme/roboto_font.png "Roboto Font")
-
+![Roboto]( "Roboto Font")
+<img src="https://github.com/asdub/5km-parks-MP2/blob/master/readme/roboto_font.png" width="150" alt="Google Fonts - Roboto" />
 
 The following colours have been used for type,\
 
@@ -157,5 +157,4 @@ This allowed me to import the SVG's into a vector program to make custom markers
 however that in itself persented another set of challenges (for another project!).*
 
 The following icons have been used throughout the app,\
-<img src="https://github.com/asdub/5km-parks-MP2/blob/master/readme/icons.png" width="150" alt="Font Awesome Icons" />
-
+![Icons](https://github.com/asdub/5km-parks-MP2/blob/master/readme/icons.png "Icons")
