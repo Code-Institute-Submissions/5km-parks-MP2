@@ -251,7 +251,9 @@ But will still be able to use non map dependant functions such as dark mode.
 ## Deployment 
 
 This app has been deployed on GitHub Pages.\
-Deployong on Github pages is very straight forward.\
+You can view a live version of the app [here](https://asdub.github.io/5km-parks-MP2/).
+
+Deployong on Github pages is very straight forward.
 1. [Login](https://github.com/login) to your GitHub account([or join](https://github.com/join)).
 2. Navigate to or create the repository, in this case [5km-parks-MP2](https://github.com/asdub/5km-parks-MP2).
 3. On the menu below the repository title click on the settings cog. 
