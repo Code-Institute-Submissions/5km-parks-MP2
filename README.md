@@ -277,7 +277,7 @@ Deployong on Github pages is very straight forward.
 
 ## Testing
 
-#### [WC3 HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fasdub.github.io%2F5km-parks-MP2%2F)
+#### [WC3 HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fasdub.github.io%2F5km-parks-MP2%2F/)
 The WC3 validator found two issues:
 1. *Warning* Section missing heading [x]
 2. *Error* Script was placed outside body [x]
@@ -287,7 +287,7 @@ JS Hink found two 13 issues:
 1. *Warning* Semicolons missing from 12 places [x]
 2. *Warning* Redefinition of origin var [x]
 
-#### WC3 CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fasdub.github.io%2F5km-parks-MP2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+#### [WC3 CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fasdub.github.io%2F5km-parks-MP2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en/)
 WC3 CSS Validator found 1 error & 38 warnings:
 1. *Error* Error with CSS calc value [x]
 2. *Warning* 38 warnings relate to -webkit -moz and custom variable declarations []
