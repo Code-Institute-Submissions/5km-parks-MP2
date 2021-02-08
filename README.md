@@ -222,10 +222,10 @@ But will still be able to use non map dependant functions such as Dark Mode.
 - **[Javascript](https://www.javascript.com/)**
 
 
-### APIS Used 
+### APIs Used 
 - **[Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview)**
 
-    **Features Used:**
+    *Features Used:*
     - [Map](https://developers.google.com/maps/documentation/javascript/reference/map#Map.constructor)
     - [Coordinates](https://developers.google.com/maps/documentation/javascript/reference/coordinates#LatLng)
     - [InfoWindow](https://developers.google.com/maps/documentation/javascript/reference/info-window#InfoWindow)
