@@ -393,6 +393,8 @@ The follow screen sizes were tested using both above tools:
 |Dell (Win10)   | Chrome     | Edge      | Firfox.   | 
 |Dell (Win7)	| IE11       | Firfox    | N/a       |
 
+Less than ideal result on smaller mobile devices in landscape. 
+But all elements are still visable and all features are usable. 
 
 ### Manual testing process
 
@@ -518,12 +520,37 @@ The follow screen sizes were tested using both above tools:
     
     Footer 
         -  Make sure both links function. 
-    
-        
-
-        
 
 
+### User Stories testing
+
+#### User Stories
+
+**I want the app purpose to be obvious or easy to figure out**\
+<img src="https://github.com/asdub/5km-parks-MP2/blob/master/readme/screenshots/iphone.png" width="75" alt="5km Parks iPhone Screenshot" />
+
+From a design & branding perspective, 
+    - I beleive the colour theme assist in guiding the user as it instills a sense of open spaces. 
+    - Tree icons used multiple times, and also a bird icon again assist in the outdoors/ nature aspect.  
+
+
+**I want to have access to the information available in as few steps of possible**\
+Initially I believed having the app immediately load and present results would achive this. 
+While this is what happens now, in a future version I would opt for an opt-in method presented by the app.
+
+
+**I definitely want to know the walking time and distance**\
+![Park Info Card](https://github.com/asdub/5km-parks-MP2/blob/master/readme/screenshots/info_card.png "Park Info Card")
+This information is provided on the information card which appears once a marker is selected.
+
+
+**I want to see parks at a closer proximity**\
+**I want to be able to customise by experience**\
+**I want my theme settings to be stored for my next visit**
+
+![Customise Panel](https://github.com/asdub/5km-parks-MP2/blob/master/readme/screenshots/customise_panel.png "Customise Panel")
+Users can chose distance of 5km, 3km, 1km. 
+Choose from 6 radius colours, and can enable a dark mode which is stored and activated upon a users return visit. 
 
 
 
