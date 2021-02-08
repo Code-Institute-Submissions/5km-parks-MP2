@@ -322,7 +322,7 @@ Deployong on Github pages is very straight forward.
 
 ## Testing
 
-#### [WC3 HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fasdub.github.io%2F5km-parks-MP2%2F/) *(Results)*
+#### [WC3 HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fasdub.github.io%2F5km-parks-MP2%2F) *(Results)*
 The WC3 validator found two issues:
 1. *Warning* Section missing heading [x]
 2. *Error* Script was placed outside body [x]
@@ -332,7 +332,7 @@ JS Hink found two 13 issues:
 1. *Warning* Semicolons missing from 12 places [x]
 2. *Warning* Redefinition of origin var [x]
 
-#### [WC3 CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fasdub.github.io%2F5km-parks-MP2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en/) *(Results)*
+#### [WC3 CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fasdub.github.io%2F5km-parks-MP2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) *(Results)*
 WC3 CSS Validator found 1 error & 38 warnings:
 1. *Error* Error with CSS calc value [x]
 2. *Warning* 38 warnings relate to -webkit -moz and custom variable declarations [ ]
@@ -343,22 +343,22 @@ WC3 CSS Validator found 1 error & 38 warnings:
 #### Initial Test
 ![Lighthouse Results](https://github.com/asdub/5km-parks-MP2/blob/master/readme/screenshots/initial_lighthouse_desktop.png "Lighthouse Results")
 
-1. Best Practices,
-    - Links to cross-origin destinations are unsafe.
-        [x] Added `rel="noreferrer" to <a> tags. 
+**Best Practices**
+- Issues reported, Links to cross-origin destinations are unsafe.
+    [x] Added `rel="noreferrer" to <a> tags. 
     
-    - Requests the geolocation permission on page load
-        [ ] Oversight, I wanted the app to load as quickly as possible. In hindsight, it would be better to have a prompt. 
+- Requests the geolocation permission on page load
+    [-] Oversight, I wanted the app to load as quickly as possible. In hindsight, it would be better to have a prompt. 
 
-2. SEO,
-    - Document does not have a meta description.
-        [x] Meta tags added to index.html.
+**SEO**
+- Document does not have a meta description.
+    [x] Meta tags added to index.html.
 
 #### Re Test
 ![Lighthouse Results](https://github.com/asdub/5km-parks-MP2/blob/master/readme/screenshots/second_lighthouse.png "Lighthouse Results")
 
 **Performance**\
-No external frameworks such as bootstrap was used. 
+-No external frameworks such as bootstrap was used. 
 I believe this helped greatly with performance.
 
 **Accessibility**\
@@ -422,7 +422,7 @@ The follow screen sizes were tested using both above tools:
 |Google Pixel XL|	1440 x 2560	|412 x 732  |
 |Google Pixel	|1080 x 1920	|412 x 732  |
 
-**Desktops & Browsers**
+**Desktops & Browsers** *(Physical devices)*
 | Device        | Browser    | Browser 2 | Browser 3 |
 | ------------- |:----------:| ---------:| ---------:|
 |MacBook Pro    | Chrome     | Safari    | Firfox    |
@@ -430,8 +430,11 @@ The follow screen sizes were tested using both above tools:
 |Dell (Win10)   | Chrome     | Edge      | Firfox.   | 
 |Dell (Win7)	| IE11       | Firfox    | N/a       |
 
-Less than ideal result on smaller mobile devices in landscape. 
+There were Less than ideal result on smaller mobile devices in landscape. 
 But all elements are still visable and all features are usable. 
+
+I was unable to text on anything under IE11. 
+
 
 ### Manual testing process
 
@@ -567,8 +570,8 @@ But all elements are still visable and all features are usable.
 <img src="https://github.com/asdub/5km-parks-MP2/blob/master/readme/screenshots/iphone.png" width="125" alt="5km Parks iPhone Screenshot" />
 
 From a design & branding perspective, 
-    - I beleive the colour theme assist in guiding the user as it instills a sense of open spaces. 
-    - Tree icons used multiple times, and also a bird icon again assist in the outdoors/ nature aspect.  
+- I beleive the colour theme assist in guiding the user as it instills a sense of open spaces. 
+- Tree icons used multiple times, and also a bird icon again assist in the outdoors/ nature aspect.  
 
 
 **I want to have access to the information available in as few steps of possible**\
@@ -598,6 +601,9 @@ Choose from 6 radius colours, and can enable a dark mode which is stored and act
 
 ## Credits 
 
-Spent a great deal of time with [this documentation Google Maps Javascript documentation](https://developers.google.com/maps/documentation/javascript/)
-[This stack overflow comment](https://stackoverflow.com/questions/32676497/google-map-api-v3-cannot-clear-the-previous-mutiple-routes-history). Which I used in app.js to manage multiple direction routes. 
-[Dark mode was thanks to livecodestream](https://livecodestream.dev/post/a-better-approach-to-dark-mode-on-your-website/)
+Spent a great deal of time with - [this documentation Google Maps Javascript documentation](https://developers.google.com/maps/documentation/javascript/).\
+\
+[This stack overflow comment](https://stackoverflow.com/questions/32676497/google-map-api-v3-cannot-clear-the-previous-mutiple-routes-history).\
+Which I used in app.js to manage multiple direction routes.\
+\
+[Dark mode was thanks to livecodestream](https://livecodestream.dev/post/a-better-approach-to-dark-mode-on-your-website/).
