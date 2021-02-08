@@ -71,7 +71,7 @@ function newMap(position) {
 		strokeOpacity: 0.6,
 		strokeWeight: 2,
 		fillColor: "#0f0f0f",
-		fillOpacity: 0.2,
+		fillOpacity: 0.15,
 		map,
 		center: {
 			lat: latitude,
@@ -108,7 +108,7 @@ function createContent(place) {
 	var parkMarker = {
 		url: './assets/img/map-marker.png',
 		size: new google.maps.Size(200, 200),
-		scaledSize: new google.maps.Size(32, 32),
+		scaledSize: new google.maps.Size(273, 406),
 		anchor: new google.maps.Point(16, 16),
 		labelOrigin: new google.maps.Point(16, 16)
 
