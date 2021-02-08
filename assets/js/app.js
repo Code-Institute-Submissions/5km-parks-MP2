@@ -108,7 +108,7 @@ function createContent(place) {
 	var parkMarker = {
 		url: './assets/img/map-marker.png',
 		size: new google.maps.Size(200, 200),
-		scaledSize: new google.maps.Size(31, 46),
+		scaledSize: new google.maps.Size(28, 41),
 		anchor: new google.maps.Point(16, 16),
 		labelOrigin: new google.maps.Point(16, 16)
 
