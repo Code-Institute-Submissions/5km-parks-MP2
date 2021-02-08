@@ -95,12 +95,16 @@ em {
     position: relative;
 }
 
-.logo > h1 > span {
+.logo > a {
+    text-decoration: none;
+}
+
+.logo > a > h1 > span {
     font-size: 1.6rem;
     text-transform: uppercase;
 }
 
-.logo > h1 > span:nth-child(2) {
+.logo > a > h1 > span:nth-child(2) {
     color: var(--theme-black);
     margin: 0 0.5rem;
 }

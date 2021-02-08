@@ -267,10 +267,12 @@ Deployong on Github pages is very straight forward.
 2. Go to the repo by clicking [here](https://github.com/asdub/5km-parks-MP2).
 3. Click fork in the top right corner of the screen. 
 
-#### Clone (Local)
+#### Clone (Locally)
 1. [Login](https://github.com/login) to your GitHub account([or join](https://github.com/join)).
 2. Go to the repo by clicking [here](https://github.com/asdub/5km-parks-MP2).
 3. On the main page of the repository click on 'Code'. 
 4. Click on the 'Clipboard'/ copy icopy the clone URL (Clone with HTTPs). 
 4. In your local environment open your terminal, navigate to or create a directory.
 5. Paste the URL into your terminal and enter. The repo should be successfully cloned.  
+
+## Testing
