@@ -393,22 +393,22 @@ The follow screen sizes were tested using both above tools:
 |Dell (Win7)	| IE11       | Firfox    | N/a       |
 
 
-#### Manual testing process
+### Manual testing process
 
-**Header**
+    Header
     - Logo & type all clearly visable and unobstructed.
     - Make sure media query reorders logo & content flexbox (from column to row).
     - Make sure distance - default 5km - changes and corresponds with user selection.
     - Make sure help button functions. 
     - Enable dark mode, repeat check. 
 
-**Help Overlay**
+    Help Overlay
     - Make sure all text is visable and unobstructed.
     - Make sure body layer beneath is not scrollable. 
     - Make sure 'exit' button works. 
     - Enable dark mode, repeat check. 
 
-**Map Canvas**
+    Map Canvas
       - Make sure the map loads. 
       - Close location infoWidow. 
       - Select marker - route from location ('A') should render. 
@@ -418,21 +418,21 @@ The follow screen sizes were tested using both above tools:
       - Make sure one finger (greedy) scrolling is functioning. 
       - Enable dark mode, repeat check. 
 
-**Map Content Card**
-    *Before selecting a marker*
+    Map Content Card
+    *Before selecting a marker
         - Make sure icon & text visable and unobstructed.
         - Check 'Having trouble' link opens help Overlay.
         - Check help overlay closes.
         - Enable dark mode, repeat check. 
 
-    *After selecting a marker*
+    *After selecting a marker
         - Check the image is visable.
         - Make sure text is visable and persented correctly (spacing, padding etc.).
         - Select another marker - Make sure the content changes correctly. 
         - Make sure gradient behind image is visable when image is loading.
         - Enable dark mode, repeat check. **
 
-    *Customise Button*
+    Customise Button
         - Make sure when active customise panel is scrolled into view. **
         - Enable dark mode, repeat check. 
 
