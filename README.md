@@ -190,11 +190,11 @@ And trigger a new search for open parks within the set radius.
 
 #### Customise Radius Colour
 Depending on the terrain or if using dark mode. 
-A user has the choice of 6 different* radius colours. \ 
+A user has the choice of 6 different* radius colours.
 *Or 7 if you include white when in dark mode*
 
 #### Dark Mode
-The user can choose between the default light theme. Or a dark theme. \ 
+The user can choose between the default light theme. Or a dark theme.
 This setting is saved between visits, allowing a user to maintain their preferred setting. 
 
 #### Help Section
@@ -214,8 +214,36 @@ But will still be able to use non map dependant functions such as Dark Mode.
 
 
 ## Technologies
+*Languages, libraries, APIS, and version control*
 
 ### Languages
 - **[HTML5](https://html.com/html5/)**
 - **[CSS3](https://www.w3schools.com/css/)**
 - **[Javascript](https://www.javascript.com/)**
+
+
+### APIS Used 
+- **[Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview)**
+
+**Features Used:**\
+- [Map](https://developers.google.com/maps/documentation/javascript/reference/map#Map.constructor)
+- [Coordinates](https://developers.google.com/maps/documentation/javascript/reference/coordinates#LatLng)
+- [InfoWindow](https://developers.google.com/maps/documentation/javascript/reference/info-window#InfoWindow)
+- [Circle](https://developers.google.com/maps/documentation/javascript/reference/polygon#Circle)
+- [Places Service](https://developers.google.com/maps/documentation/javascript/reference/places-service#PlacesService)
+- [Directions Service](https://developers.google.com/maps/documentation/javascript/reference/directions#DirectionsService)
+- [Marker](https://developers.google.com/maps/documentation/javascript/reference/marker#Marker)
+- [Directions Renderer](https://developers.google.com/maps/documentation/javascript/reference/directions#DirectionsRenderer)
+
+### Version Control & Managment
+- [Git](https://git-scm.com/)
+- [Github](https://github.com/)
+
+## Other software/ tools Used
+- [Adobe InDesign](https://en.wikipedia.org/wiki/Adobe_InDesign)
+- [Adobe Illustrator](https://en.wikipedia.org/wiki/Adobe_Illustrator)
+- [Gitpod](https://gitpod.io)
+- [JSfiffle](https://jsfiddle.net/)
+- [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)
+- [Safari Web Development Tools](https://developer.apple.com/safari/tools/)
+
