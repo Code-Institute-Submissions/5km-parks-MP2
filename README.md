@@ -28,7 +28,7 @@ And discover new or forgotten green spaces within their immediate vicinity.
     * [Brief](#Brief)
     * [Project Aims](#the-aim-of-this-project-is-to)
     * [User Stories](#new-user-stories)
-* [Design)](#design))
+* [Design](#design)
     * [Colours](#colours)
     * [Wireframes](#wireframes)
     * [Typography](#typography)
