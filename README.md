@@ -211,7 +211,11 @@ If the location cannot be found after a period of 5000ms.
 A prompt will appear on the map canvas informing the user and inviting them to reload the page. 
 
 If a user attempts to use a map control without a map present, they will also receive a notificaton. 
-But will still be able to use non map dependant functions such as dark mode. 
+But will still be able to use non map dependant functions such as dark mode.
+
+#### User feedback
+Distance in title updates with user radius selection. 
+As does the 'black' colour choice, which changes to white when dark mode is enabled. 
 
 
 ## Technologies
@@ -333,3 +337,33 @@ And would prompt the user in app beforehand.
 The SEO scroe increase to 100 with the addition correct meta tags. 
 [Thank you! Heymeta ](https://www.heymeta.com/ )
 
+
+### Manual Testing 
+
+## Mobile 
+
+# Responsive Testing
+Tested on physical iPhone & Anrdroid phones (iPhone 11 Pro Max / Samsung Galaxy s21)
+
+Also tested within mobile device views in Chrome Dev Tools & Safari Web Tools.
+The follow screen sizes were tested using both above tools: 
+
+| Device        | Pixel Size    | Viewport  |
+| ------------- |:-------------:| ---------:|
+|iPhone XR     | 828 x 1792.   | 414 x 896 |
+|iPhone XS     | 1125 x 2436   | 375 x 812 |
+|iPhone XS Max | 1242 x 2688   | 414 x 896 |
+|iPhone X	    | 1125 x 2436	| 375 x 812 |
+|iPhone 8 Plus  | 1080 x 1920	| 414 x 736 |
+|iPhone 8	    | 750 x 1334	| 375 x 667 |
+|iPhone 7 Plus	| 1080 x 1920	| 414 x 736.|
+|iPhone 7	    | 750 x 1334	| 375 x 667 |
+|iPhone 6/6S Plus|1080 x 1920   | 414 x 736 |
+|iPhone 6/6S	|750 x 1334	    |375 x 667  |
+|iPhone 5	    |640 x 1136	    |320 x 568  |		
+|iPod Touch	    |640 x 1136	    |320 x 568  |	
+|iPad Pro	    |2048 x 2732	|1024 x 1366|
+|iPad 3 & 4 Gen	|1536 x 2048	|768 x 1024|
+|iPad Air 1 & 2	|1536 x 2048	|768 x 1024|
+|iPad Mini 2 & 3|1536 x 2048	|768 x 1024|
+|iPad Mini  	|768 x 1024	    |768 x 1024
