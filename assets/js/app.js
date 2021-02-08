@@ -1,6 +1,6 @@
 // 5km-parks
 // https://asdub.github.io/5km-parks-MP2/
-
+/*jshint esversion: 6 */
 
 // Get user location
 function getLocation() {
@@ -12,12 +12,12 @@ function getLocation() {
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(newMap, locError, options);
 	} else {
-		locError()
+		locError();
 	}
 }
 // If user location cannot be found log & display error.
 function locError(err) {
-	var userMessage = document.querySelector('.location-status')
+	var userMessage = document.querySelector('.location-status');
 	console.log("Error finding your location", err);
 	userMessage.classList.toggle('location-error');
 	userMessage.innerHTML = `Location could not be found.<br>Please <a href="/">reolad page</a> and try again.`;
@@ -27,7 +27,7 @@ function locError(err) {
 var directions = [];
 var markers = [];
 var radius = 5000; //default radius 5km
-let map, infoWindow, origin, radiusCircle;
+let map, infoWindow, userOrigin, radiusCircle;
 
 
 // Create Map, Radius and Google Palces Request
@@ -37,7 +37,7 @@ function newMap(position) {
 		latitude,
 		longitude
 	} = position.coords;
-	origin = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+	userOrigin = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 	map = new google.maps.Map(document.getElementById('map'), {
 		center: {
 			lat: 53.3242381,
@@ -54,7 +54,7 @@ function newMap(position) {
 		`<span>Lat: <em>${position.coords.latitude.toFixed(4)}</em> | Lng: <em>${position.coords.longitude.toFixed(4)}</em></span>` +
 		`</div>`;
 	// Display user location on map.
-	infoWindow = new google.maps.InfoWindow()
+	infoWindow = new google.maps.InfoWindow();
 	infoWindow.setPosition({
 		lat: latitude,
 		lng: longitude
@@ -80,7 +80,7 @@ function newMap(position) {
 		radius: radius,
 	});
 	// Google Places request object for parks within the set radius.
-	searchParks()
+	searchParks();
 
 	// Storing user location in session to use again if map customised. 
 	sessionStorage.setItem('position_lat', position.coords.latitude);
@@ -89,7 +89,7 @@ function newMap(position) {
 
 function searchParks() {
 	var request = {
-		location: origin,
+		location: userOrigin,
 		radius: radius,
 		openNow: true,
 		type: ['park']
@@ -131,7 +131,7 @@ function createContent(place) {
 			infoWindow.setContent(markerName);
 			infoWindow.open(map);
 			map.setZoom(12);
-			reloadRoute()
+			reloadRoute();
 			calculateAndDisplayRoute(directionsService, destination, place);
 		});
 	}
@@ -157,7 +157,7 @@ function reloadRoute() {
 //Distance and route calculation and render
 function calculateAndDisplayRoute(directionsService, destination, place) {
 	directionsService.route({
-			origin: origin,
+			origin: userOrigin,
 			destination: destination,
 			travelMode: google.maps.TravelMode.WALKING,
 		},
