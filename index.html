@@ -1,183 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Font Awesome Start -->
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-            integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-            crossorigin="anonymous"
-        />
-        <!-- Font Awesome Ened -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- Google Maps API -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg6pVGpq9aVWWnmmNfbkWzilV38ORzG8s&libraries=places&callback=getLocation"
-      defer></script>
-     <!-- App.js -->
-    <script src="assets/js/app.js"></script>
-    <title>5km PARKS</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Font Awesome Start -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+	<!-- Font Awesome Ened -->
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<!-- Google Maps API -->
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg6pVGpq9aVWWnmmNfbkWzilV38ORzG8s&libraries=places&callback=getLocation" defer></script>
+	<!-- App.js -->
+	<script src="assets/js/app.js"></script>
+	<title>5km PARKS</title>
 </head>
 <body id="parks">
-    <div id="main" class="layout">
-        <header>
-            <!-- Header -->
-            <div class="head-container">
-                <div class="logo">
-                    <a href="#"><h1>5<span>KM</span><span>Parks</span><i class="fas fa-tree"></i></h1></a>   
-                </div>
-                <div class="header-content">
-                     <!-- Radius Distance updated via user prefernce -->
-                    <p>
-                        Locations of <span>open parks</span><br>
-                        within a <span id="header-radius">5KM</span> vicinity. 
-                    </p>
-                </div>
-            </div>
-            <!-- Header Help Section / Overlay default display:none  -->
-            <div class="help-toggle">
-                <i class="help far fa-question-circle"></i>
-            </div>
-            <div class="help-overlay">
-                <div class="help-overlay-container">
-                    <div class="help-overlay-content">
-                        <i class="help fas fa-times-circle"></i>
-                        <div class="heading">
-                            <h2>Help</h2>
-                            <div class="help-content">
-                                <div class="help-content-item">
-                                    <span><i class="fas fa-map-marker-alt"></i> Location services must be enabled!</span>
-                                    <p>
-                                        This web app functions based on your device location. 
-                                        If the map does not load, please check your device settings
-                                        and reload the page. 
-                                    </p>
-                                </div>
-                                <div class="help-content-item">
-                                    <span><i class="fas fa-search"></i> Why can't I see certain parks?</span>
-                                    <p>
-                                        Quality control! We only list parks with 100 user ratings or more. 
-                                        This way the review scores should accuratley reflect peoples experiences. 
-                                        We also only list <em>OPEN</em> parks. 
-                                    </p>
-                                </div>
-                                <div class="help-content-item">
-                                    <span><i class="fas fa-crow"></i> As the crow flies</span>
-                                    <p>
-                                        The distance radius is set as the crow flies. <br>
-                                        Distance is measured on the walking route illustrated. Distances
-                                        may show above 5km (or your selection) on the park info panel. 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="help-logo">
-                        <h2>5<span>KM</span><span>Parks</span><i class="fas fa-tree"></i></h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Header End -->
-        </header>
-        <!-- Content Start -->
-        <div class="main-content">
-            <section class="main-content-container">
-                <div class="map-area-container">
-                    <div id="map" class="map-area">
-                        <p class="location-status">Loading Map...</p>
-                        <span><i class="fas fa-map-marker-alt"></i> Location services must be enabled</span>
-                        <span class="location-error"></span>
-                    </div>
-                </div>
-                 <!-- Park Content -->
-                <div id="mapContent" class="map-content-area">
-                    <div class="map-content-area-icon">
-                         <i class="far fa-hand-pointer"></i>
-                    </div>
-                    <div class="map-content-area-text">
-                        <p>
-                            Select a park marker on the <br>
-                            map for more details on<br>
-                            each location
-                        </p>
-                    </div>
-                    <div class="map-content-area-help">
-                        <span class="help">Having trouble?</span>
-                    </div>
-                </div>
-                 <!-- User Customise Button  -->
-                <div class="map-content-area-button">
-                    <button class="white-btn-large" data-link="customise">Customise</button>
-                </div>
-            </section>
-             <!-- User Customise Panel Section  -->
-            <section id="customise" class="customise-area-container">
-                <h2>Customise</h2>
-                <div class="customise-panel">
-                    <div id="customiseError"><span id="cusError"></span></div>
-                    <div class="customise-distance">
-                    <!-- User Radius Control  -->
-                        <span>Radius Distance</span>
-                        <div class="customise-panel-inner">
-                            <button class="radius-controls active" data-radius="5000">5km</button>
-                            <button class="radius-controls" data-radius="3000">3km</button>
-                            <button class="radius-controls" data-radius="1000">1km</button>
-                        </div>
-                    </div>
-                    <div class="customise-colour">
-                    <!-- User Colour Control  -->
-                        <span>Radius Colour</span>
-                        <div class="customise-panel-inner">
-                            <button class="colour-controls active" data-colour="#0F0F0F">Black</button>
-                            <button class="colour-controls" data-colour="#F86C6C">Red</button>
-                            <button class="colour-controls" data-colour="#1F6DFF">Blue</button>
-                            <button class="colour-controls" data-colour="#3FB777">Green</button>
-                            <button class="colour-controls" data-colour="#FF8A27">Orange</button>
-                            <button class="colour-controls" data-colour="#99A59E">Grey</button>
-                        </div>
-                    </div>
-                    <div class="customise-theme">
-                     <!-- User Theme Control -->
-                        <span>Dark Mode</span>
-                        <div class="customise-panel-inner">
-                            <button class="theme-controls active" data-theme="off">Off</button>
-                            <button class="theme-controls" data-theme="on">On</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="customise-area-button">
-                     <!-- Back to map Button -->
-                    <button class="white-btn-large" data-link="parks">Back to Map</button>
-                </div>
-            </section>
-            <section class="about-container">
-                     <div class="about-logo">
-                        <h2>5<span>KM</span><span>Parks</span><i class="fas fa-tree"></i></h2>
-                    </div>
-                    <div class="about-content">
-                         <!-- About Content -->
-                        <p>
-                            Made to assist you in discovering green <br>
-                            spaces within a set radius of your location.<br>
-                            <span>Perfect for a walk during lockdown!</span>
-                        </p>
-                        <p>
-                            Keep up to date on current government<br>
-                            guidelines regarding restrictions <a target="_blank" href="https://www.hse.ie/eng/services/news/newsfeatures/covid19-updates/">here.</a> 
-                        </p>
-                    </div>
-            </section>
-         <!-- Content End -->
-        </div>
-        <footer class="footer">
-             <!-- Terms of Service/ Privacy policy links & Copyright -->
-            <p><a target="_blank" href="https://wikiedu.org/terms-of-service/">Terms of Service</a> | <a target="_blank" href="https://wikiedu.org/privacy-policy/">Privacy Policy</a></p>
-            <p>Copyright 2021© 5km PARKS</p>
-        </footer>
-    </div>
+	<div id="main" class="layout">
+		<header>
+			<!-- Header -->
+			<div class="head-container">
+				<div class="logo">
+					<a href="#">
+						<h1>5<span>KM</span><span>Parks</span><i class="fas fa-tree"></i></h1>
+					</a>
+				</div>
+				<div class="header-content">
+					<!-- Radius Distance updated via user prefernce -->
+					<p>
+						Locations of <span>open parks</span><br>
+						within a <span id="header-radius">5KM</span> vicinity.
+					</p>
+				</div>
+			</div>
+			<!-- Header Help Section / Overlay default display:none  -->
+			<div class="help-toggle">
+				<i class="help far fa-question-circle"></i>
+			</div>
+			<div class="help-overlay">
+				<div class="help-overlay-container">
+					<div class="help-overlay-content">
+						<i class="help fas fa-times-circle"></i>
+						<div class="heading">
+							<h2>Help</h2>
+							<div class="help-content">
+								<div class="help-content-item">
+									<span><i class="fas fa-map-marker-alt"></i> Location services must be enabled!</span>
+									<p>
+										This web app functions based on your device location.
+										If the map does not load, please check your device settings
+										and reload the page.
+									</p>
+								</div>
+								<div class="help-content-item">
+									<span><i class="fas fa-search"></i> Why can't I see certain parks?</span>
+									<p>
+										Quality control! We only list parks with 100 user ratings or more.
+										This way the review scores should accuratley reflect peoples experiences.
+										We also only list <em>OPEN</em> parks.
+									</p>
+								</div>
+								<div class="help-content-item">
+									<span><i class="fas fa-crow"></i> As the crow flies</span>
+									<p>
+										The distance radius is set as the crow flies. <br>
+										Distance is measured on the walking route illustrated. Distances
+										may show above 5km (or your selection) on the park info panel.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="help-logo">
+							<h2>5<span>KM</span><span>Parks</span><i class="fas fa-tree"></i></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Header End -->
+		</header>
+		<!-- Content Start -->
+		<div class="main-content">
+			<section class="main-content-container">
+				<div class="map-area-container">
+					<div id="map" class="map-area">
+						<p class="location-status">Loading Map...</p>
+						<span><i class="fas fa-map-marker-alt"></i> Location services must be enabled</span>
+						<span class="location-error"></span>
+					</div>
+				</div>
+				<!-- Park Content -->
+				<div id="mapContent" class="map-content-area">
+					<div class="map-content-area-icon">
+						<i class="far fa-hand-pointer"></i>
+					</div>
+					<div class="map-content-area-text">
+						<p>
+							Select a park marker on the <br>
+							map for more details on<br>
+							each location
+						</p>
+					</div>
+					<div class="map-content-area-help">
+						<span class="help">Having trouble?</span>
+					</div>
+				</div>
+				<!-- User Customise Button  -->
+				<div class="map-content-area-button">
+					<button class="white-btn-large" data-link="customise">Customise</button>
+				</div>
+			</section>
+			<!-- User Customise Panel Section  -->
+			<section id="customise" class="customise-area-container">
+				<h2>Customise</h2>
+				<div class="customise-panel">
+					<div id="customiseError"><span id="cusError"></span></div>
+					<div class="customise-distance">
+						<!-- User Radius Control  -->
+						<span>Radius Distance</span>
+						<div class="customise-panel-inner">
+							<button class="radius-controls active" data-radius="5000">5km</button>
+							<button class="radius-controls" data-radius="3000">3km</button>
+							<button class="radius-controls" data-radius="1000">1km</button>
+						</div>
+					</div>
+					<div class="customise-colour">
+						<!-- User Colour Control  -->
+						<span>Radius Colour</span>
+						<div class="customise-panel-inner">
+							<button class="colour-controls active" data-colour="#0F0F0F">Black</button>
+							<button class="colour-controls" data-colour="#F86C6C">Red</button>
+							<button class="colour-controls" data-colour="#1F6DFF">Blue</button>
+							<button class="colour-controls" data-colour="#3FB777">Green</button>
+							<button class="colour-controls" data-colour="#FF8A27">Orange</button>
+							<button class="colour-controls" data-colour="#99A59E">Grey</button>
+						</div>
+					</div>
+					<div class="customise-theme">
+						<!-- User Theme Control -->
+						<span>Dark Mode</span>
+						<div class="customise-panel-inner">
+							<button class="theme-controls active" data-theme="off">Off</button>
+							<button class="theme-controls" data-theme="on">On</button>
+						</div>
+					</div>
+				</div>
+				<div class="customise-area-button">
+					<!-- Back to map Button -->
+					<button class="white-btn-large" data-link="parks">Back to Map</button>
+				</div>
+			</section>
+			<section class="about-container">
+				<div class="about-logo">
+					<h2>5<span>KM</span><span>Parks</span><i class="fas fa-tree"></i></h2>
+				</div>
+				<div class="about-content">
+					<!-- About Content -->
+					<p>
+						Made to assist you in discovering green <br>
+						spaces within a set radius of your location.<br>
+						<span>Perfect for a walk during lockdown!</span>
+					</p>
+					<p>
+						Keep up to date on current government<br>
+						guidelines regarding restrictions <a target="_blank" href="https://www.hse.ie/eng/services/news/newsfeatures/covid19-updates/">here.</a>
+					</p>
+				</div>
+			</section>
+			<!-- Content End -->
+		</div>
+		<footer class="footer">
+			<!-- Terms of Service/ Privacy policy links & Copyright -->
+			<p><a target="_blank" href="https://wikiedu.org/terms-of-service/">Terms of Service</a> | <a target="_blank" href="https://wikiedu.org/privacy-policy/">Privacy Policy</a></p>
+			<p>Copyright 2021© 5km PARKS</p>
+		</footer>
+	</div>
 </body>
- <script src="assets/js/script.js"></script>
+<!-- Helper Script -->
+<script src="assets/js/script.js"></script>
 </html>
