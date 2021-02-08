@@ -127,7 +127,7 @@ Only one font is in use:\
 
 The following colours have been used for type,
 
-# Main font colours:\
+#### Main font colours:
 *Used for all main content in light & dark modes.*
 
 Black - *#0F0F0F*\
@@ -137,7 +137,7 @@ White - *#FFFFFF*\
 ![Whtie](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/%23FFFFFF.png "White - #FFFFFF")
 
 
-# Secondary font colours:\
+#### Secondary font colours:
 *Used for secondary links and warnings.*
 
 Medium Grey - *#707070*\
@@ -183,29 +183,29 @@ using a modular set of sections and divs.
 
 **Additional customisable feature are:**
 
-# User Set Radius
+#### User Set Radius
 A user can select betwen the default 5km radius, or choose 3km and 1km. 
 Selecting a new distance will re-render the radius on the map canvas. 
 And trigger a new search for open parks within the set radius. 
 
-# Customise Radius Colour
+#### Customise Radius Colour
 Depending on the terrain or if using dark mode. 
-A user has the choice of 6 different* radius colours.\ 
+A user has the choice of 6 different* radius colours. \ 
 *Or 7 if you include white when in dark mode*
 
-# Dark Mode
-The user can choose between the default light theme. Or a dark theme.\ 
+#### Dark Mode
+The user can choose between the default light theme. Or a dark theme. \ 
 This setting is saved between visits, allowing a user to maintain their preferred setting. 
 
-# Help Section
+#### Help Section
 Accessible from the top right corner help icon. Or the 'Having trouble?' text in the inital call to action. 
 The help menu explains whats required for the app to function and information on how the app works. 
 
-# Filtered Results
+#### Filtered Results
 Only open parks are displayed. 
 And parks with 100+ user reviews - just to make sure the ratings displayed are representative of the park. 
 
-# Error Reporting 
+#### Error Reporting 
 If the location cannot be found after a period of 5000ms. 
 A prompt will appear on the map canvas informing the user and inviting them to reload the page. 
 
@@ -216,3 +216,6 @@ But will still be able to use non map dependant functions such as Dark Mode.
 ## Technologies
 
 ### Languages
+- **[HTML5](https://html.com/html5/)**
+- **[CSS3](https://www.w3schools.com/css/)**
+- **[Javascript](https://www.javascript.com/)**
