@@ -338,6 +338,11 @@ p.location-error a {
 	letter-spacing: -0.025rem;
 }
 
+.park-data > p,
+.park-data > p > i {
+    color: #fd8888;
+}
+
 /** Customise Section **/
 .customise-area-container {
 	padding: 1rem 0;
@@ -542,6 +547,17 @@ p.location-error a {
 	color: var(--theme-black);
 	margin: 0 0.5rem;
 }
+
+.help-logo>h2>span:nth-child(2) {
+	margin: 0 0.5rem;
+}
+
+#header-radius,
+.about-content > p:nth-child(1),
+.about-logo>h2>span:nth-child(2) {
+	color: #fd8888;
+}
+
 
 .about-logo i,
 .help-logo i {
