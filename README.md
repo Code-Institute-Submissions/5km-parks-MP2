@@ -31,7 +31,8 @@ And discover new or forgotten green spaces within their immediate vicinity.
 ### Brief 
 I wanted to create an app which provides a simple and streamlined way for users to access 
 immediate details on green spaces for walking within their vicinity. 
-Users will liekly be keen on outdoors or walking. 
+
+Users will likely be keen on outdoors or walking. 
 Owing to the lockdown, and people wanting to be outdoors more, we could see a wide variety of users. 
 
 
@@ -74,8 +75,8 @@ The goal is to convey the relationship with green space.
 
 **Four main colours**
 
-Green - *#3FB777*\
-![Green](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/%233FB777.png "Green - #3FB777")
+Green - *#146A3C*\
+![Green](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/%23146A3C.png "Green - #146A3C")
 
 Taupe - *#D9D9D9*\
 ![Taupe](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/%23D9D9D9.png "Taupe - #D9D9D9")
@@ -290,4 +291,7 @@ JS Hink found two 13 issues:
 #### [WC3 CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fasdub.github.io%2F5km-parks-MP2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en/) *(Results)*
 WC3 CSS Validator found 1 error & 38 warnings:
 1. *Error* Error with CSS calc value [x]
-2. *Warning* 38 warnings relate to -webkit -moz and custom variable declarations []
+2. *Warning* 38 warnings relate to -webkit -moz and custom variable declarations [ ]
+
+
+### Google Lighthouse
