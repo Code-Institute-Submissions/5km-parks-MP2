@@ -276,3 +276,10 @@ Deployong on Github pages is very straight forward.
 5. Paste the URL into your terminal and enter. The repo should be successfully cloned.  
 
 ## Testing
+
+#### [WC3 HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fasdub.github.io%2F5km-parks-MP2%2F)
+The WC3 validator found two issues:
+1. *Warning* Section missing heading [x]
+2. *Error* Script was placed outside body [x]
+
+#### 
