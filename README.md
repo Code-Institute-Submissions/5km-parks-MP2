@@ -24,7 +24,43 @@ And discover new or forgotten green spaces within their immediate vicinity.
 
 ## Contents 
 
-[User Experience (UX)](#user-experience-(ux))
+* [User Experience (UX)](#user-experience-(ux))
+    * [Brief](#Brief)
+    * [Project Aims](#the-aim-of-this-project-is-to)
+    * [User Stories](#new-user-stories)
+* [Design)](#design))
+    * [Colours](#colours)
+    * [Wireframes](#wireframes)
+    * [Typography](#typography)
+    * [Iconography](#iconography)
+    * [Responsive](#responsive)
+    * [Features](#features)
+    * [Future Features](#future-features)
+* [Technologies](#technologies)
+    * [Languages](#languages)
+    * [APIs Used](#apis-used)
+    * [Version Control & Managment](#version-control--managment)
+    * [Software/ Tools Used](#other-software-tools-used)
+* [Deployment](#deployment)
+    * [GitHub Pages](#github-Pages)
+    * [Fork](#fork)
+    * [Clone (Locally)](#clone-locally)
+* [Testing](#testing)
+    * [W3C HTML](#wc3-html-validator-results)
+    * [JS Hink](#js-hint)
+    * [W3C CSS](#wc3-css-validator-results)
+    * [Google Lighthouse](#google-lighthouse)
+        * [Initial Test](#initial-test)
+        * [Re-Test](#re-test)
+    * [Manual Testing](#manual-testing)
+        * [Responsive Testing](#responsive-testing)
+        * [Manual Testing Process](#manual-testing-process)
+        * [User Stories Testing](#user-stories-testing)
+    * [Known Bugs](#known-bugs)
+    * [Credits](#credits)
+
+
+
 
 
 ## User Experience (UX)
@@ -248,7 +284,7 @@ As does the 'black' colour choice, which changes to white when dark mode is enab
 - [Git](https://git-scm.com/)
 - [Github](https://github.com/)
 
-## Other software/ tools Used
+### Other software/ tools Used
 - [Adobe InDesign](https://en.wikipedia.org/wiki/Adobe_InDesign)
 - [Adobe Illustrator](https://en.wikipedia.org/wiki/Adobe_Illustrator)
 - [Gitpod](https://gitpod.io)
@@ -559,5 +595,9 @@ Choose from 6 radius colours, and can enable a dark mode which is stored and act
     ** Smooth scrolling is currently not working on iOS devices. 
     ** When dark mode is enabled after a marker has been selected, the image inverts in colour.
     
-        
 
+## Credits 
+
+Spent a great deal of time with [this documentation Google Maps Javascript documentation](https://developers.google.com/maps/documentation/javascript/)
+[This stack overflow comment](https://stackoverflow.com/questions/32676497/google-map-api-v3-cannot-clear-the-previous-mutiple-routes-history). Which I used in app.js to manage multiple direction routes. 
+[Dark mode was thanks to livecodestream](https://livecodestream.dev/post/a-better-approach-to-dark-mode-on-your-website/)
