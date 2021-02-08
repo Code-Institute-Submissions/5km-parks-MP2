@@ -28,7 +28,7 @@ And discover new or forgotten green spaces within their immediate vicinity.
 
 ## User Experience (UX)
 
-#### Brief 
+### Brief 
 I wanted to create an app which will provide a simple and streamlined way for users to access 
 immediate details on green spaces for walking within their vicinity. 
 Users will liekly be keen on outdoors or walking. 
@@ -61,11 +61,11 @@ Owing to the lockdown, and people wanting to be outdoors more, we could see a wi
 
 #### Returning & Regular User Stores
 - I want to be able to customise by experiance. 
-- I want my theme settings to be rememberd for my next visit. 
+- I want my theme settings to be stored for my next visit. 
 
 
 
-## Design (UX)
+## Design 
 
 ### Colours 
 
@@ -106,13 +106,14 @@ Grey - *#99A59E*\
 
 ![Wireframes](https://github.com/asdub/5km-parks-MP2/blob/master/readme/wireframes.png "Wireframes")
 
-Mock Ups were completed for Desktop, Tablet & mobile devices. 
+Mock Ups were completed for desktop, tablet & mobile devices. 
 
 Wireframes can be viewed in full resolution [here](https://xd.adobe.com/view/44519a7f-885e-48e5-988e-39706e3ca85a-1102/?fullscreen).
 
 
 *Design changes during production*\
-During the build of this app it became apparent that the desktop version better suited positoning of the park information card below, as with the table and mobile versions.\
+During the build of this app it became apparent that the desktop version better suited positoning of the park information card below, 
+as with the table and mobile versions.
 
 
 ### Typography
@@ -120,14 +121,13 @@ During the build of this app it became apparent that the desktop version better 
 This project uses [Google Fonts](https://fonts.google.com/).
 
 Only one font is in use,\
-**Roboto** in a weights of 400, 500 & 700.\
+**Roboto** in a weights of 400, 500 & 700.
 
-![Roboto]( "Roboto Font")
 <img src="https://github.com/asdub/5km-parks-MP2/blob/master/readme/roboto_font.png" width="150" alt="Google Fonts - Roboto" />
 
-The following colours have been used for type,\
+The following colours have been used for type,
 
-Main font colours\
+Main font colours:\
 *Used for all main content in light & dark modes.*
 
 Black - *#0F0F0F*\
@@ -137,7 +137,7 @@ White - *#FFFFFF*\
 ![Whtie](https://github.com/asdub/5km-parks-MP2/blob/master/readme/colours/%23FFFFFF.png "White - #FFFFFF")
 
 
-Secondary font colours\
+Secondary font colours:\
 *Used for secondary links and warnings.*
 
 Medium Grey - *#707070*\
@@ -150,11 +150,64 @@ Red - *#F86C6C*\
 ### Iconography
 
 All icons in this project are from [Font Awesome](https://fontawesome.com/).
+
 And also via this repo [Font-Awesome-SVG-PNG](https://github.com/encharm/Font-Awesome-SVG-PNG). 
 This allowed me to import the SVG's into a vector program to make custom markers while still be able to keep icon uniformity. 
 
 *I did experiment with using SVG based markers for better quaulity - 
 however that in itself persented another set of challenges (for another project!).*
 
-The following icons have been used throughout the app,\
+The following icons have been used throughout the app:\
 ![Icons](https://github.com/asdub/5km-parks-MP2/blob/master/readme/icons.png "Icons")
+
+### Responsive 
+
+The app was designed with a mobile first approach.  
+
+No bootstraps or frameworks for layouts have been used. 
+A fully responsive [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) layout was designed, 
+using a modular set of sections and divs. 
+
+
+### Features
+
+The geolocation web app comprises of the following features: 
+-  Show user their current location with GPS coordinates on a map. 
+-  On load display markers for open park within a 5km radius of user location on the map. 
+-  A user clicking/ tapping a marker displays a walking route. 
+-  Clicking/ tapping a marker display a park info card containing:
+    - An image of the park.
+    - It's distance from the user (if walked).
+    - The walk time froim the users current location.
+    - The Google rating of the park. 
+
+Additional customisable feature are:
+
+**Set Radius** 
+A user can select betwen the default 5km radius, or choose 3km and 1km. 
+Selecting a new distance will re-render the radius on the map. 
+And trigger a new search for open opens with the set radius. 
+
+**Customise Radius Colour** 
+Depending on the terrain or if using Dark Mode. 
+A user has the choice of 6 different* radius colours. 
+*or 7 if you include white when in dark mode*
+
+**Dark Mode** 
+The user can choose between the default light them. Or a dark them. 
+This setting is saved between visit, so a user can maintain their preferred setting. 
+
+**Help Section** 
+Accessible from the top right corner help icon. Or the 'Having trouble' text in the inital call to action. 
+The help menu explains whats required for the app to function and information on how the app works. 
+
+**Filtered Results** 
+Only open parks are displayed. 
+And parks with 100 or more user review - to make sure the rating displayed is representative of the park. 
+
+**Error Reporting**
+If the location cannot be found after a period (5000ms). 
+A prompt will appear on the map canvas informing the user and inviting them to reload the page. 
+
+If a user attempts to use a map control without a map present, they will also receive a notificaton. 
+But will still be able to use non map dependant functions such as Dark Mode. 
