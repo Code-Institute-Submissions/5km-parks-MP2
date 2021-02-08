@@ -34,9 +34,9 @@
 			</div>
 			<!-- Header Help Section / Overlay default display:none  -->
 			<div class="help-toggle">
-				<i class="help far fa-question-circle"></i>
+				<i class="help far fa-question-circle" aria-label="Help Menu"></i>
 			</div>
-			<div class="help-overlay">
+			<div class="help-overlay" aria-hidden="true">
 				<div class="help-overlay-container">
 					<div class="help-overlay-content">
 						<i class="help fas fa-times-circle"></i>
@@ -80,7 +80,7 @@
 		<!-- Content Start -->
 		<div class="main-content">
 			<section class="main-content-container">
-                <h2>Map Canvas</h2>
+                <h2 aria-hidden="true">Map Canvas</h2>
 				<div class="map-area-container">
 					<div id="map" class="map-area">
 						<p class="location-status">Loading Map...</p>
@@ -101,12 +101,12 @@
 						</p>
 					</div>
 					<div class="map-content-area-help">
-						<span class="help">Having trouble?</span>
+						<span aria-label="Help Menu" class="help">Having trouble?</span>
 					</div>
 				</div>
 				<!-- User Customise Button  -->
 				<div class="map-content-area-button">
-					<button class="white-btn-large" data-link="customise">Customise</button>
+					<button class="white-btn-large" data-link="customise" aria-label="Customise">Customise</button>
 				</div>
 			</section>
 			<!-- User Customise Panel Section  -->
@@ -118,35 +118,35 @@
 						<!-- User Radius Control  -->
 						<span>Radius Distance</span>
 						<div class="customise-panel-inner">
-							<button class="radius-controls active" data-radius="5000">5km</button>
-							<button class="radius-controls" data-radius="3000">3km</button>
-							<button class="radius-controls" data-radius="1000">1km</button>
+							<button aria-label="Radius Distance" class="radius-controls active" data-radius="5000">5km</button>
+							<button aria-label="Radius Distance" class="radius-controls" data-radius="3000">3km</button>
+							<button aria-label="Radius Distnace" class="radius-controls" data-radius="1000">1km</button>
 						</div>
 					</div>
 					<div class="customise-colour">
 						<!-- User Colour Control  -->
 						<span>Radius Colour</span>
 						<div class="customise-panel-inner">
-							<button class="colour-controls active" data-colour="#0F0F0F">Black</button>
-							<button class="colour-controls" data-colour="#F86C6C">Red</button>
-							<button class="colour-controls" data-colour="#1F6DFF">Blue</button>
-							<button class="colour-controls" data-colour="#3FB777">Green</button>
-							<button class="colour-controls" data-colour="#FF8A27">Orange</button>
-							<button class="colour-controls" data-colour="#99A59E">Grey</button>
+							<button aria-label="Radius Colour" class="colour-controls active" data-colour="#0F0F0F">Black</button>
+							<button aria-label="Radius Colour" class="colour-controls" data-colour="#F86C6C">Red</button>
+							<button aria-label="Radius Colour" class="colour-controls" data-colour="#1F6DFF">Blue</button>
+							<button aria-label="Radius Colour" class="colour-controls" data-colour="#3FB777">Green</button>
+							<button aria-label="Radius Colour" class="colour-controls" data-colour="#FF8A27">Orange</button>
+							<button aria-label="Radius Colour" class="colour-controls" data-colour="#99A59E">Grey</button>
 						</div>
 					</div>
 					<div class="customise-theme">
 						<!-- User Theme Control -->
 						<span>Dark Mode</span>
 						<div class="customise-panel-inner">
-							<button class="theme-controls active" data-theme="off">Off</button>
-							<button class="theme-controls" data-theme="on">On</button>
+							<button aria-label="Dark Mode" class="theme-controls active" data-theme="off">Off</button>
+							<button aria-label="Dark Mode" class="theme-controls" data-theme="on">On</button>
 						</div>
 					</div>
 				</div>
 				<div class="customise-area-button">
 					<!-- Back to map Button -->
-					<button class="white-btn-large" data-link="parks">Back to Map</button>
+					<button aria-label="Back to Map" class="white-btn-large" data-link="parks">Back to Map</button>
 				</div>
 			</section>
 			<section class="about-container">
