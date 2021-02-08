@@ -343,7 +343,7 @@ The SEO scroe increase to 100 with the addition correct meta tags.
 ### Mobile 
 
 #### Responsive Testing
-Tested on physical iPhone & Anrdroid phones (iPhone 11 Pro Max / Samsung Galaxy s21)
+Responsivity tested on physical iPhone & Anrdroid phones (iPhone 11 Pro Max / Samsung Galaxy s21)
 
 Also tested within mobile device views in Chrome Dev Tools & Safari Web Tools.
 The follow screen sizes were tested using both above tools: 
@@ -383,3 +383,11 @@ The follow screen sizes were tested using both above tools:
 |Google Pixel 2	|1440 x 2560	|412 x 732  |
 |Google Pixel XL|	1440 x 2560	|412 x 732  |
 |Google Pixel	|1080 x 1920	|412 x 732  |
+
+*Desktop Browsers*
+| Device        | Browser    | Browser 2 | Browser 3 |
+| ------------- |:----------:| ---------:| ---------:|
+|MacBook Pro    | Chrome     | Safari    | Firfox    |
+|Chromebook     | Chrome     | N/a       | N/a       |
+|Dell (Win10)   | Chrome     | Edge      | Firfox.   | 
+|Dell (Win7)	| IE11       | Firfox    | N/a       |
